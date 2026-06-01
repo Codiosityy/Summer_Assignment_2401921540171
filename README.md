@@ -18,7 +18,7 @@
 <p>
   <img src="https://img.shields.io/github/last-commit/Codiosityy/Summer_Assignment_2401921540171?style=flat-square&logo=github&label=Last%20Commit" alt="Last Commit"/>
   <img src="https://img.shields.io/github/repo-size/Codiosityy/Summer_Assignment_2401921540171?style=flat-square&logo=files&label=Repo%20Size" alt="Repo Size"/>
-  <img src="https://img.shields.io/github/languages/top/Codiosityy/Summer_Assignment_2401921540171?style=flat-square&logo=c%2B%2B&logoColor=white&color=00599C&label=Primary%20Language" alt="Language"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white&label=Primary%20Language" alt="Language"/>
   <img src="https://img.shields.io/badge/Maintained-Yes-brightgreen?style=flat-square&logo=check&logoColor=white" alt="Maintained"/>
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square&logo=rocket" alt="Status"/>
 </p>

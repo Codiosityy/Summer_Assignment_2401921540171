@@ -1,5 +1,8 @@
 class Solution {
 public:
+    // Hash map approach: store each value with its index in one pass,
+    // and check if the complement (target - current) already exists.
+    // Time: O(n), Space: O(n)
     vector<int> twoSum(vector<int>& nums, int target) {
         std::unordered_map<int, int> numToIndex;
 

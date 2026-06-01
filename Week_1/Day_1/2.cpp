@@ -1,5 +1,8 @@
 class Solution {
 public:
+    // Two-pointer technique: `read` scans the array, `write` overwrites
+    // duplicates in-place. Single pass with constant extra space.
+    // Time: O(n), Space: O(1)
     int removeDuplicates(vector<int>& nums) {
         if (nums.empty()) {
             return 0;

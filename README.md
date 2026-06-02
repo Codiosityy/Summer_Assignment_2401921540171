@@ -78,7 +78,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
-| **Week 1** | Arrays + Basic Strings | `3 / 15` | `0 / 1` | 🟢 Active |
+| **Week 1** | Arrays + Basic Strings | `6 / 15` | `0 / 1` | 🟢 Active |
 | **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
@@ -86,7 +86,7 @@ This repository documents my **summer college assignment** focused on mastering 
 ### 📈 Visual Progress Bars
 
 ```
-Week 1  DSA   ██████░░░░░░░░░░░░░░  3 / 15   🟢
+Week 1  DSA   ████████████░░░░░░░░  6 / 15   🟢
 Week 1  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `3 / 60` | 🟢 5% |
-| 🟢 **Easy** | `3 / 36` | Building foundations |
-| 🟡 **Medium** | `0 / 20` | Up next! |
+| **Total DSA Solved** | `6 / 60` | 🟢 10% |
+| 🟢 **Easy** | `5 / 36` | Building foundations |
+| 🟡 **Medium** | `1 / 20` | First Medium ✅ |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `0 / 4` | 🎭 Coming soon |
-| 📅 **Active Days** | `1` | Day 1 of summer |
-| **Overall** | `3 / 64` | 🟢 |
+| 📅 **Active Days** | `2` | Day 2 of summer |
+| **Overall** | `6 / 64` | 🟢 |
 
 </div>
 
@@ -142,9 +142,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Remove Duplicates from Sorted Array
 │   │   └── ✅ 3.cpp              # Best Time to Buy and Sell Stock
 │   ├── 📂 Day_2/                 # Prefix Sum / Sliding Window
-│   │   ├── 🚧 53.cpp             # Maximum Subarray
-│   │   ├── 🚧 217.cpp            # Contains Duplicate
-│   │   └── 🚧 643.cpp            # Maximum Average Subarray I
+│   │   ├── ✅ 1.cpp              # Maximum Subarray
+│   │   ├── ✅ 2.cpp              # Contains Duplicate
+│   │   └── ✅ 3.cpp              # Maximum Average Subarray I
 │   ├── 📂 Day_3/                 # Two Pointer
 │   │   ├── 🚧 283.cpp            # Move Zeroes
 │   │   ├── 🚧 977.cpp            # Squares of a Sorted Array
@@ -209,9 +209,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **53** | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | 🟡 Medium | Kadane's Algorithm | [🚧 Pending](./Week_1/Day_2/53.cpp) | [🔗](https://leetcode.com/problems/maximum-subarray/) |
-| **217** | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | 🟢 Easy | Hash Set | [🚧 Pending](./Week_1/Day_2/217.cpp) | [🔗](https://leetcode.com/problems/contains-duplicate/) |
-| **643** | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | 🟢 Easy | Sliding Window | [🚧 Pending](./Week_1/Day_2/643.cpp) | [🔗](https://leetcode.com/problems/maximum-average-subarray-i/) |
+| **53** | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | 🟡 Medium | Kadane's Algorithm | [✅ C++](./Week_1/Day_2/1.cpp) | [🔗](https://leetcode.com/problems/maximum-subarray/) |
+| **217** | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | 🟢 Easy | Hash Set | [✅ C++](./Week_1/Day_2/2.cpp) | [🔗](https://leetcode.com/problems/contains-duplicate/) |
+| **643** | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | 🟢 Easy | Sliding Window | [✅ C++](./Week_1/Day_2/3.cpp) | [🔗](https://leetcode.com/problems/maximum-average-subarray-i/) |
 
 #### 🌄 Day 3: Two Pointer
 
@@ -252,6 +252,25 @@ Summer_Assignment_2401921540171/
 
 **Problem 121: Best Time to Buy and Sell Stock** — Max profit from one buy-sell transaction.
 > **Approach**: Track min price so far, compute best profit in a single pass.
+> **Time**: O(n) | **Space**: O(1)
+
+</details>
+
+<details>
+<summary><b>📌 Week 1 — Day 2 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 53: Maximum Subarray** — Find the contiguous subarray with the largest sum.
+> **Approach**: Kadane's algorithm — at each index, either start a new subarray or extend the current best.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 217: Contains Duplicate** — Return true if any value appears at least twice.
+> **Approach**: Hash set tracks seen elements; first repeat returns true.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 643: Maximum Average Subarray I** — Find the contiguous subarray of size `k` with the highest average.
+> **Approach**: Sliding window of size `k`; track sum and slide in O(1) per step.
 > **Time**: O(n) | **Space**: O(1)
 
 </details>
@@ -473,15 +492,17 @@ Summer_Assignment_2401921540171/
 
 | Type | Pattern | Example |
 |------|---------|---------|
-| **LeetCode Solution (C++)** | `<problem-number>.cpp` | `1.cpp` → LeetCode #1 |
+| **LeetCode Solution (C++)** | `<sequence>.cpp` (1-indexed within each day) | `Day_1/1.cpp`, `Day_2/3.cpp` |
 | **OOPS Program (Java)** | `<DescriptiveName>.java` | `LibraryUserDemo.java` |
 
+> 💡 **File numbering**: Solutions are numbered sequentially within each `Day_Y/` folder (`1.cpp`, `2.cpp`, `3.cpp`). The LeetCode problem number is shown in the Solutions Index table, not the filename — this keeps filenames short and ordered.
+>
 > 💡 **Why `.cpp` for DSA, `.java` for OOPS?** — LeetCode is C++ here, but the OOPS assignment specifies Java. Each language lives in its own convention.
 
 ### ➕ Adding a New Solution (Quick Guide)
 
 1. **Pick the right folder** → `Week_X/Day_Y/` for DSA, `Week_X/OOPS/` for OOPS
-2. **Name the file** → Use the LeetCode problem number: `<number>.cpp` (or descriptive `.java`)
+2. **Name the file** → Use the next sequential number in that day: `<n>.cpp` (or descriptive `.java`)
 3. **Write clean code** → Use the standard `Solution` class, add comments for approach & complexity
 4. **Update this README** → Flip the row from 🚧 Pending to ✅ Done, link the file
 5. **Commit with a clear message** → e.g., `Add <Problem Name> solution`

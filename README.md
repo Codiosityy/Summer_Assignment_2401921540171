@@ -78,7 +78,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
-| **Week 1** | Arrays + Basic Strings | `6 / 15` | `0 / 1` | 🟢 Active |
+| **Week 1** | Arrays + Basic Strings | `9 / 15` | `0 / 1` | 🟢 Active |
 | **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
@@ -86,7 +86,7 @@ This repository documents my **summer college assignment** focused on mastering 
 ### 📈 Visual Progress Bars
 
 ```
-Week 1  DSA   ████████████░░░░░░░░  6 / 15   🟢
+Week 1  DSA   ██████████████████░░  9 / 15   🟢
 Week 1  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `6 / 60` | 🟢 10% |
-| 🟢 **Easy** | `5 / 36` | Building foundations |
-| 🟡 **Medium** | `1 / 20` | First Medium ✅ |
+| **Total DSA Solved** | `9 / 60` | 🟢 15% |
+| 🟢 **Easy** | `7 / 36` | Building foundations |
+| 🟡 **Medium** | `2 / 20` | Climbing! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `0 / 4` | 🎭 Coming soon |
-| 📅 **Active Days** | `2` | Day 2 of summer |
-| **Overall** | `6 / 64` | 🟢 |
+| 📅 **Active Days** | `3` | Day 3 of summer |
+| **Overall** | `9 / 64` | 🟢 |
 
 </div>
 
@@ -146,9 +146,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Contains Duplicate
 │   │   └── ✅ 3.cpp              # Maximum Average Subarray I
 │   ├── 📂 Day_3/                 # Two Pointer
-│   │   ├── 🚧 283.cpp            # Move Zeroes
-│   │   ├── 🚧 977.cpp            # Squares of a Sorted Array
-│   │   └── 🚧 11.cpp             # Container With Most Water
+│   │   ├── ✅ 1.cpp              # Move Zeroes
+│   │   ├── ✅ 2.cpp              # Squares of a Sorted Array
+│   │   └── ✅ 3.cpp              # Container With Most Water
 │   ├── 📂 Day_4/                 # Matrix Problems
 │   │   ├── 🚧 1572.cpp           # Matrix Diagonal Sum
 │   │   ├── 🚧 566.cpp            # Reshape the Matrix
@@ -217,9 +217,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **283** | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | 🟢 Easy | Two Pointers | [🚧 Pending](./Week_1/Day_3/283.cpp) | [🔗](https://leetcode.com/problems/move-zeroes/) |
-| **977** | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | 🟢 Easy | Two Pointers | [🚧 Pending](./Week_1/Day_3/977.cpp) | [🔗](https://leetcode.com/problems/squares-of-a-sorted-array/) |
-| **11** | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | 🟡 Medium | Two Pointers | [🚧 Pending](./Week_1/Day_3/11.cpp) | [🔗](https://leetcode.com/problems/container-with-most-water/) |
+| **283** | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | 🟢 Easy | Two Pointers | [✅ C++](./Week_1/Day_3/1.cpp) | [🔗](https://leetcode.com/problems/move-zeroes/) |
+| **977** | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | 🟢 Easy | Two Pointers | [✅ C++](./Week_1/Day_3/2.cpp) | [🔗](https://leetcode.com/problems/squares-of-a-sorted-array/) |
+| **11** | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | 🟡 Medium | Two Pointers | [✅ C++](./Week_1/Day_3/3.cpp) | [🔗](https://leetcode.com/problems/container-with-most-water/) |
 
 #### 🌅 Day 4: Matrix Problems
 
@@ -271,6 +271,25 @@ Summer_Assignment_2401921540171/
 
 **Problem 643: Maximum Average Subarray I** — Find the contiguous subarray of size `k` with the highest average.
 > **Approach**: Sliding window of size `k`; track sum and slide in O(1) per step.
+> **Time**: O(n) | **Space**: O(1)
+
+</details>
+
+<details>
+<summary><b>📌 Week 1 — Day 3 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 283: Move Zeroes** — Move all zeros to the end, maintaining the relative order of non-zeros.
+> **Approach**: Two pointers — swap each non-zero to the next insertion position, growing the prefix of "good" elements.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 977: Squares of a Sorted Array** — Return the squares of a sorted array, also sorted.
+> **Approach**: Two pointers from both ends; the largest square is always at one of the ends, place it from right to left.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 11: Container With Most Water** — Find two lines that form a container holding the most water.
+> **Approach**: Two pointers at both ends; always move the pointer at the shorter line, since it limits the area.
 > **Time**: O(n) | **Space**: O(1)
 
 </details>

@@ -78,7 +78,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
-| **Week 1** | Arrays + Basic Strings | `9 / 15` | `0 / 1` | 🟢 Active |
+| **Week 1** | Arrays + Basic Strings | `12 / 15` | `0 / 1` | 🟢 Active |
 | **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
@@ -86,7 +86,7 @@ This repository documents my **summer college assignment** focused on mastering 
 ### 📈 Visual Progress Bars
 
 ```
-Week 1  DSA   ██████████████████░░  9 / 15   🟢
+Week 1  DSA   ████████████████████  12 / 15  🟢
 Week 1  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `9 / 60` | 🟢 15% |
-| 🟢 **Easy** | `7 / 36` | Building foundations |
-| 🟡 **Medium** | `2 / 20` | Climbing! |
+| **Total DSA Solved** | `12 / 60` | 🟢 20% |
+| 🟢 **Easy** | `9 / 36` | Building foundations |
+| 🟡 **Medium** | `3 / 20` | Climbing! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `0 / 4` | 🎭 Coming soon |
-| 📅 **Active Days** | `3` | Day 3 of summer |
-| **Overall** | `9 / 64` | 🟢 |
+| 📅 **Active Days** | `4` | Day 4 of summer |
+| **Overall** | `12 / 64` | 🟢 |
 
 </div>
 
@@ -150,9 +150,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Squares of a Sorted Array
 │   │   └── ✅ 3.cpp              # Container With Most Water
 │   ├── 📂 Day_4/                 # Matrix Problems
-│   │   ├── 🚧 1572.cpp           # Matrix Diagonal Sum
-│   │   ├── 🚧 566.cpp            # Reshape the Matrix
-│   │   └── 🚧 54.cpp             # Spiral Matrix
+│   │   ├── ✅ 1.cpp              # Matrix Diagonal Sum
+│   │   ├── ✅ 2.cpp              # Reshape the Matrix
+│   │   └── ✅ 3.cpp              # Spiral Matrix
 │   ├── 📂 Day_5/                 # String Basics
 │   │   ├── 🚧 125.cpp            # Valid Palindrome
 │   │   ├── 🚧 344.cpp            # Reverse String
@@ -225,9 +225,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **1572** | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) | 🟢 Easy | Matrix Traversal | [🚧 Pending](./Week_1/Day_4/1572.cpp) | [🔗](https://leetcode.com/problems/matrix-diagonal-sum/) |
-| **566** | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/description/) | 🟢 Easy | Matrix Manipulation | [🚧 Pending](./Week_1/Day_4/566.cpp) | [🔗](https://leetcode.com/problems/reshape-the-matrix/) |
-| **54** | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | 🟡 Medium | Matrix Traversal | [🚧 Pending](./Week_1/Day_4/54.cpp) | [🔗](https://leetcode.com/problems/spiral-matrix/) |
+| **1572** | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) | 🟢 Easy | Matrix Traversal | [✅ C++](./Week_1/Day_4/1.cpp) | [🔗](https://leetcode.com/problems/matrix-diagonal-sum/) |
+| **566** | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/description/) | 🟢 Easy | Matrix Manipulation | [✅ C++](./Week_1/Day_4/2.cpp) | [🔗](https://leetcode.com/problems/reshape-the-matrix/) |
+| **54** | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | 🟡 Medium | Matrix Traversal | [✅ C++](./Week_1/Day_4/3.cpp) | [🔗](https://leetcode.com/problems/spiral-matrix/) |
 
 #### 🌇 Day 5: String Basics
 
@@ -291,6 +291,25 @@ Summer_Assignment_2401921540171/
 **Problem 11: Container With Most Water** — Find two lines that form a container holding the most water.
 > **Approach**: Two pointers at both ends; always move the pointer at the shorter line, since it limits the area.
 > **Time**: O(n) | **Space**: O(1)
+
+</details>
+
+<details>
+<summary><b>📌 Week 1 — Day 4 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 1572: Matrix Diagonal Sum** — Sum of the primary and secondary diagonals of a square matrix.
+> **Approach**: Single loop over rows; add `mat[i][i]` (primary) and `mat[i][n-1-i]` (secondary), skipping the center if odd-sized to avoid double-count.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 566: Reshape the Matrix** — Reshape an `m × n` matrix to a new `r × c` matrix, preserving data order.
+> **Approach**: Treat the matrix as a flat sequence of `m*n` elements; map index `i` to source `(i/n, i%n)` and destination `(i/c, i%c)`.
+> **Time**: O(m·n) | **Space**: O(1) extra (output excluded)
+
+**Problem 54: Spiral Matrix** — Return all elements of a matrix in spiral order (right → down → left → up).
+> **Approach**: Layer-by-layer traversal using four shrinking boundaries (`top`, `bottom`, `left`, `right`); peel off one layer per loop.
+> **Time**: O(m·n) | **Space**: O(1) extra (output excluded)
 
 </details>
 

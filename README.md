@@ -78,7 +78,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
-| **Week 1** | Arrays + Basic Strings | `12 / 15` | `0 / 1` | 🟢 Active |
+| **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `0 / 1` | 🟡 OOPS pending |
 | **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
@@ -86,7 +86,7 @@ This repository documents my **summer college assignment** focused on mastering 
 ### 📈 Visual Progress Bars
 
 ```
-Week 1  DSA   ████████████████████  12 / 15  🟢
+Week 1  DSA   ████████████████████  15 / 15  ✅  COMPLETE!
 Week 1  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `12 / 60` | 🟢 20% |
-| 🟢 **Easy** | `9 / 36` | Building foundations |
+| **Total DSA Solved** | `15 / 60` | 🟢 25% |
+| 🟢 **Easy** | `12 / 36` | One third done! |
 | 🟡 **Medium** | `3 / 20` | Climbing! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `0 / 4` | 🎭 Coming soon |
-| 📅 **Active Days** | `4` | Day 4 of summer |
-| **Overall** | `12 / 64` | 🟢 |
+| 📅 **Active Days** | `5` | Day 5 of summer |
+| **Overall** | `15 / 64` | 🟢 |
 
 </div>
 
@@ -154,9 +154,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Reshape the Matrix
 │   │   └── ✅ 3.cpp              # Spiral Matrix
 │   ├── 📂 Day_5/                 # String Basics
-│   │   ├── 🚧 125.cpp            # Valid Palindrome
-│   │   ├── 🚧 344.cpp            # Reverse String
-│   │   └── 🚧 14.cpp             # Longest Common Prefix
+│   │   ├── ✅ 1.cpp              # Valid Palindrome
+│   │   ├── ✅ 2.cpp              # Reverse String
+│   │   └── ✅ 3.cpp              # Longest Common Prefix
 │   └── 📂 OOPS/                  # Interfaces
 │       └── 🚧 LibraryUserDemo.java   # LibraryUser interface, KidUser, AdultUser
 │
@@ -233,9 +233,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **125** | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | 🟢 Easy | Two Pointers | [🚧 Pending](./Week_1/Day_5/125.cpp) | [🔗](https://leetcode.com/problems/valid-palindrome/) |
-| **344** | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | 🟢 Easy | Two Pointers | [🚧 Pending](./Week_1/Day_5/344.cpp) | [🔗](https://leetcode.com/problems/reverse-string/) |
-| **14** | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | 🟢 Easy | String Comparison | [🚧 Pending](./Week_1/Day_5/14.cpp) | [🔗](https://leetcode.com/problems/longest-common-prefix/) |
+| **125** | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | 🟢 Easy | Two Pointers | [✅ C++](./Week_1/Day_5/1.cpp) | [🔗](https://leetcode.com/problems/valid-palindrome/) |
+| **344** | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | 🟢 Easy | Two Pointers | [✅ C++](./Week_1/Day_5/2.cpp) | [🔗](https://leetcode.com/problems/reverse-string/) |
+| **14** | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | 🟢 Easy | String Comparison | [✅ C++](./Week_1/Day_5/3.cpp) | [🔗](https://leetcode.com/problems/longest-common-prefix/) |
 
 <details>
 <summary><b>📌 Week 1 — Day 1 Solution Summaries</b></summary>
@@ -310,6 +310,27 @@ Summer_Assignment_2401921540171/
 **Problem 54: Spiral Matrix** — Return all elements of a matrix in spiral order (right → down → left → up).
 > **Approach**: Layer-by-layer traversal using four shrinking boundaries (`top`, `bottom`, `left`, `right`); peel off one layer per loop.
 > **Time**: O(m·n) | **Space**: O(1) extra (output excluded)
+
+</details>
+
+<details>
+<summary><b>📌 Week 1 — Day 5 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 125: Valid Palindrome** — Check if a string is a palindrome, ignoring non-alphanumerics and case.
+> **Approach**: Two pointers from both ends; skip non-alphanumerics, compare characters case-insensitively using `tolower` + `isalnum`.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 344: Reverse String** — Reverse a string in-place.
+> **Approach**: Two pointers from both ends, swap inward until they meet.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 14: Longest Common Prefix** — Find the longest prefix shared by all strings in the array.
+> **Approach**: Vertical scanning — for each character position, check that all strings have the same char at that index; stop at first mismatch.
+> **Time**: O(n·m) | **Space**: O(1)
+
+> 🎉 **Week 1 DSA complete!** All 15 problems done. Only the OOPS LibraryUser problem remains to finish Week 1 entirely.
 
 </details>
 

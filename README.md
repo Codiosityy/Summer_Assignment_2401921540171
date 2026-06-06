@@ -78,7 +78,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
-| **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `0 / 1` | 🟡 OOPS pending |
+| **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `1 / 1` ✅ | ✅ Complete |
 | **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
@@ -87,7 +87,7 @@ This repository documents my **summer college assignment** focused on mastering 
 
 ```
 Week 1  DSA   ████████████████████  15 / 15  ✅  COMPLETE!
-Week 1  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
+Week 1  OOPS  ████████████████████  1 / 1    ✅  COMPLETE!
 
 Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
 Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
@@ -107,9 +107,9 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 | 🟢 **Easy** | `12 / 36` | One third done! |
 | 🟡 **Medium** | `3 / 20` | Climbing! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
-| **Total OOPS Solved** | `0 / 4` | 🎭 Coming soon |
-| 📅 **Active Days** | `5` | Day 5 of summer |
-| **Overall** | `15 / 64` | 🟢 |
+| **Total OOPS Solved** | `1 / 4` | 🎭 25% — Interfaces ✅ |
+| 📅 **Active Days** | `6` | Day 6 of summer |
+| **Overall** | `16 / 64` | 🟢 |
 
 </div>
 
@@ -158,7 +158,10 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Reverse String
 │   │   └── ✅ 3.cpp              # Longest Common Prefix
 │   └── 📂 OOPS/                  # Interfaces
-│       └── 🚧 LibraryUserDemo.java   # LibraryUser interface, KidUser, AdultUser
+│       ├── ✅ LibraryUser.java         # Interface
+│       ├── ✅ KidUser.java             # KidUser implementation
+│       ├── ✅ AdultUser.java           # AdultUser implementation
+│       └── ✅ LibraryInterfaceDemo.java # Test driver
 │
 ├── 📂 Week_2/                    # 🟡 Strings (Advanced)
 │   ├── 📂 Day_1/                 # Hashing in Strings
@@ -476,7 +479,7 @@ Summer_Assignment_2401921540171/
 
 | Week | Topic | Concepts | File | Status |
 |:----:|-------|----------|------|:------:|
-| **Week 1** | 🟢 **Interfaces — LibraryUser** | Interface, Polymorphism, Encapsulation | [LibraryUserDemo.java](./Week_1/OOPS/LibraryUserDemo.java) | 🚧 Pending |
+| **Week 1** | 🟢 **Interfaces — LibraryUser** | Interface, Polymorphism, Encapsulation | [4 files](./Week_1/OOPS/) | ✅ Done |
 | **Week 2** | 🟢 **Interfaces — Playable** | Interface, Packages, Polymorphism | [PlayableDemo.java](./Week_2/OOPS/PlayableDemo.java) | 🚧 Pending |
 | **Week 3** | 🟡 **Abstract Class — Compartment** | Abstract Class, Polymorphism, Random Behavior | [TestCompartment.java](./Week_3/OOPS/TestCompartment.java) | 🚧 Pending |
 | **Week 4** | 🔴 **Mixed (4 sub-questions)** | Interface, Inner Class, Class Design, Inheritance | [1-4 files](./Week_4/OOPS/) | 🚧 Pending |
@@ -490,12 +493,12 @@ Summer_Assignment_2401921540171/
 
 **Scenario**: A library application for Adults and Children. Both register accounts; rules differ by age and book type.
 
-- Create interface `LibraryUser` with `registerAccount()` and `requestBook()`
-- Implement `KidUser` (age < 12, "Kids" books, 10 days)
-- Implement `AdultUser` (age > 12, "Fiction" books, 7 days)
-- Test in `LibraryInterfaceDemo.java` with provided test cases
+- ✅ `LibraryUser.java` — Interface with `registerAccount()` and `requestBook()`
+- ✅ `KidUser.java` — Implements `LibraryUser` (age < 12, "Kids" books, 10 days)
+- ✅ `AdultUser.java` — Implements `LibraryUser` (age > 12, "Fiction" books, 7 days)
+- ✅ `LibraryInterfaceDemo.java` — Test driver with both test cases from the assignment
 
-> **Concepts**: Interface, Polymorphism, Encapsulation, Future extensibility
+> **Concepts demonstrated**: Interface, Polymorphism, Encapsulation, Getters/Setters, Constructor injection, `@Override`, String comparison with `equalsIgnoreCase`, Future extensibility (new user roles = new class implementing the interface)
 
 </details>
 

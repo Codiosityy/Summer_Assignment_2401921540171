@@ -79,7 +79,7 @@ This repository documents my **summer college assignment** focused on mastering 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `1 / 1` ✅ | ✅ Complete |
-| **Week 2** | Strings (Advanced) | `0 / 15` | `0 / 1` | ⚪ Pending |
+| **Week 2** | Strings (Advanced) | `3 / 15` | `0 / 1` | 🟢 Active |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
 
@@ -89,7 +89,7 @@ This repository documents my **summer college assignment** focused on mastering 
 Week 1  DSA   ████████████████████  15 / 15  ✅  COMPLETE!
 Week 1  OOPS  ████████████████████  1 / 1    ✅  COMPLETE!
 
-Week 2  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
+Week 2  DSA   ██████░░░░░░░░░░░░░░  3 / 15   🟢
 Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `15 / 60` | 🟢 25% |
-| 🟢 **Easy** | `12 / 36` | One third done! |
+| **Total DSA Solved** | `18 / 60` | 🟢 30% |
+| 🟢 **Easy** | `15 / 36` | Building momentum! |
 | 🟡 **Medium** | `3 / 20` | Climbing! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `1 / 4` | 🎭 25% — Interfaces ✅ |
-| 📅 **Active Days** | `6` | Day 6 of summer |
-| **Overall** | `16 / 64` | 🟢 |
+| 📅 **Active Days** | `7` | Day 7 of summer |
+| **Overall** | `19 / 64` | 🟢 |
 
 </div>
 
@@ -165,6 +165,9 @@ Summer_Assignment_2401921540171/
 │
 ├── 📂 Week_2/                    # 🟡 Strings (Advanced)
 │   ├── 📂 Day_1/                 # Hashing in Strings
+│   │   ├── ✅ 1.cpp              # Valid Anagram
+│   │   ├── ✅ 2.cpp              # First Unique Character in a String
+│   │   └── ✅ 3.cpp              # Ransom Note
 │   ├── 📂 Day_2/                 # Sliding Window on Strings
 │   ├── 📂 Day_3/                 # Pattern Matching
 │   ├── 📂 Day_4/                 # Recursion + Strings
@@ -337,6 +340,25 @@ Summer_Assignment_2401921540171/
 
 </details>
 
+<details>
+<summary><b>📌 Week 2 — Day 1 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 242: Valid Anagram** — Check if two strings are anagrams of each other.
+> **Approach**: Use a fixed-size array of 26 counters; increment for `s`, decrement for `t`; if all counters are zero, they're anagrams.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 387: First Unique Character in a String** — Find the index of the first non-repeating character.
+> **Approach**: Two-pass — first pass counts frequencies, second pass scans for the first char with count 1.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 383: Ransom Note** — Check if `ransomNote` can be constructed from `magazine` (each letter used once).
+> **Approach**: Count available letters in `magazine`, then consume them for each char in `ransomNote`; if any counter goes negative, return false.
+> **Time**: O(n + m) | **Space**: O(1)
+
+</details>
+
 ---
 
 ### 📅 Week 2 — Strings (Advanced)
@@ -345,9 +367,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **242** | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | 🟢 Easy | Hash Map | [🚧 Pending](./Week_2/Day_1/242.cpp) | [🔗](https://leetcode.com/problems/valid-anagram/) |
-| **387** | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | 🟢 Easy | Hash Map | [🚧 Pending](./Week_2/Day_1/387.cpp) | [🔗](https://leetcode.com/problems/first-unique-character-in-a-string/) |
-| **383** | [Ransom Note](https://leetcode.com/problems/ransom-note/description/) | 🟢 Easy | Hash Map | [🚧 Pending](./Week_2/Day_1/383.cpp) | [🔗](https://leetcode.com/problems/ransom-note/) |
+| **242** | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | 🟢 Easy | Hash Map | [✅ C++](./Week_2/Day_1/1.cpp) | [🔗](https://leetcode.com/problems/valid-anagram/) |
+| **387** | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | 🟢 Easy | Hash Map | [✅ C++](./Week_2/Day_1/2.cpp) | [🔗](https://leetcode.com/problems/first-unique-character-in-a-string/) |
+| **383** | [Ransom Note](https://leetcode.com/problems/ransom-note/description/) | 🟢 Easy | Hash Map | [✅ C++](./Week_2/Day_1/3.cpp) | [🔗](https://leetcode.com/problems/ransom-note/) |
 
 #### 🌞 Day 2: Sliding Window on Strings
 

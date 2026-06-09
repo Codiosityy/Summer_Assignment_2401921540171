@@ -79,7 +79,7 @@ This repository documents my **summer college assignment** focused on mastering 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `1 / 1` ✅ | ✅ Complete |
-| **Week 2** | Strings (Advanced) | `3 / 15` | `0 / 1` | 🟢 Active |
+| **Week 2** | Strings (Advanced) | `6 / 15` | `0 / 1` | 🟢 Active |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
 
@@ -89,7 +89,7 @@ This repository documents my **summer college assignment** focused on mastering 
 Week 1  DSA   ████████████████████  15 / 15  ✅  COMPLETE!
 Week 1  OOPS  ████████████████████  1 / 1    ✅  COMPLETE!
 
-Week 2  DSA   ██████░░░░░░░░░░░░░░  3 / 15   🟢
+Week 2  DSA   ████████████░░░░░░░░  6 / 15   🟢
 Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `18 / 60` | 🟢 30% |
+| **Total DSA Solved** | `21 / 60` | 🟢 35% |
 | 🟢 **Easy** | `15 / 36` | Building momentum! |
-| 🟡 **Medium** | `3 / 20` | Climbing! |
+| 🟡 **Medium** | `6 / 20` | Medium machine! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `1 / 4` | 🎭 25% — Interfaces ✅ |
-| 📅 **Active Days** | `7` | Day 7 of summer |
-| **Overall** | `19 / 64` | 🟢 |
+| 📅 **Active Days** | `8` | Day 8 of summer |
+| **Overall** | `22 / 64` | 🟢 |
 
 </div>
 
@@ -169,6 +169,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # First Unique Character in a String
 │   │   └── ✅ 3.cpp              # Ransom Note
 │   ├── 📂 Day_2/                 # Sliding Window on Strings
+│   │   ├── ✅ 1.cpp              # Longest Substring Without Repeating Characters
+│   │   ├── ✅ 2.cpp              # Permutation in String
+│   │   └── ✅ 3.cpp              # Find All Anagrams in a String
 │   ├── 📂 Day_3/                 # Pattern Matching
 │   ├── 📂 Day_4/                 # Recursion + Strings
 │   ├── 📂 Day_5/                 # Mixed String Problems
@@ -359,6 +362,25 @@ Summer_Assignment_2401921540171/
 
 </details>
 
+<details>
+<summary><b>📌 Week 2 — Day 2 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 3: Longest Substring Without Repeating Characters** — Find the length of the longest substring without repeating characters.
+> **Approach**: Sliding window with a `last[128]` array tracking the last seen index of each character; on a repeat, jump `left` past the previous occurrence.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 567: Permutation in String** — Check if any permutation of `s1` is a substring of `s2`.
+> **Approach**: Sliding window of size `s1.size()` over `s2`; maintain a frequency diff — if any count goes negative, shrink from the left; when window size matches, return true.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 438: Find All Anagrams in a String** — Find all start indices of anagrams of `p` in `s`.
+> **Approach**: Sliding window of size `p.size()`; build frequency arrays for `p` and the current window, compare with `memcmp`; add start index to result when they match.
+> **Time**: O(n) | **Space**: O(1)
+
+</details>
+
 ---
 
 ### 📅 Week 2 — Strings (Advanced)
@@ -375,9 +397,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | 🟡 Medium | Sliding Window | [🚧 Pending](./Week_2/Day_2/3.cpp) | [🔗](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
-| **567** | [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | 🟡 Medium | Sliding Window | [🚧 Pending](./Week_2/Day_2/567.cpp) | [🔗](https://leetcode.com/problems/permutation-in-string/) |
-| **438** | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | 🟡 Medium | Sliding Window | [🚧 Pending](./Week_2/Day_2/438.cpp) | [🔗](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
+| **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | 🟡 Medium | Sliding Window | [✅ C++](./Week_2/Day_2/1.cpp) | [🔗](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| **567** | [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | 🟡 Medium | Sliding Window | [✅ C++](./Week_2/Day_2/2.cpp) | [🔗](https://leetcode.com/problems/permutation-in-string/) |
+| **438** | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | 🟡 Medium | Sliding Window | [✅ C++](./Week_2/Day_2/3.cpp) | [🔗](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
 
 #### 🌄 Day 3: Pattern Matching
 

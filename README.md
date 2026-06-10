@@ -79,7 +79,7 @@ This repository documents my **summer college assignment** focused on mastering 
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` ✅ | `1 / 1` ✅ | ✅ Complete |
-| **Week 2** | Strings (Advanced) | `6 / 15` | `0 / 1` | 🟢 Active |
+| **Week 2** | Strings (Advanced) | `9 / 15` | `0 / 1` | 🟢 Active |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | ⚪ Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | ⚪ Pending |
 
@@ -89,7 +89,7 @@ This repository documents my **summer college assignment** focused on mastering 
 Week 1  DSA   ████████████████████  15 / 15  ✅  COMPLETE!
 Week 1  OOPS  ████████████████████  1 / 1    ✅  COMPLETE!
 
-Week 2  DSA   ████████████░░░░░░░░  6 / 15   🟢
+Week 2  DSA   ██████████████████░░  9 / 15   🟢
 Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1    ⚪
 
 Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15   ⚪
@@ -103,13 +103,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Status |
 |--------|:-----:|:------:|
-| **Total DSA Solved** | `21 / 60` | 🟢 35% |
-| 🟢 **Easy** | `15 / 36` | Building momentum! |
+| **Total DSA Solved** | `24 / 60` | 🟢 40% |
+| 🟢 **Easy** | `18 / 36` | Halfway on Easy! |
 | 🟡 **Medium** | `6 / 20` | Medium machine! |
 | 🔴 **Hard** | `0 / 4` | Challenge accepted |
 | **Total OOPS Solved** | `1 / 4` | 🎭 25% — Interfaces ✅ |
-| 📅 **Active Days** | `8` | Day 8 of summer |
-| **Overall** | `22 / 64` | 🟢 |
+| 📅 **Active Days** | `9` | Day 9 of summer |
+| **Overall** | `25 / 64` | 🟢 |
 
 </div>
 
@@ -173,6 +173,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── ✅ 2.cpp              # Permutation in String
 │   │   └── ✅ 3.cpp              # Find All Anagrams in a String
 │   ├── 📂 Day_3/                 # Pattern Matching
+│   │   ├── ✅ 1.cpp              # Find the Index of the First Occurrence in a String
+│   │   ├── ✅ 2.cpp              # Is Subsequence
+│   │   └── ✅ 3.cpp              # Repeated Substring Pattern
 │   ├── 📂 Day_4/                 # Recursion + Strings
 │   ├── 📂 Day_5/                 # Mixed String Problems
 │   └── 📂 OOPS/                  # Playable interface (music package)
@@ -381,6 +384,25 @@ Summer_Assignment_2401921540171/
 
 </details>
 
+<details>
+<summary><b>📌 Week 2 — Day 3 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 28: Find the Index of the First Occurrence in a String** — Find the first index where `needle` occurs in `haystack`.
+> **Approach**: Brute-force sliding — for each starting position, compare characters one by one until a full match or mismatch.
+> **Time**: O((n-m+1) × m) | **Space**: O(1)
+
+**Problem 392: Is Subsequence** — Check if `s` is a subsequence of `t`.
+> **Approach**: Two pointers — scan `t` and advance through `s` only when characters match; return true if `s` is fully consumed.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 459: Repeated Substring Pattern** — Check if `s` can be made by repeating a substring.
+> **Approach**: KMP — build the LPS (longest prefix-suffix) array; if the last LPS value divides evenly into the string length, the string is made of repeated patterns.
+> **Time**: O(n) | **Space**: O(n)
+
+</details>
+
 ---
 
 ### 📅 Week 2 — Strings (Advanced)
@@ -405,9 +427,9 @@ Summer_Assignment_2401921540171/
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **28** | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | 🟢 Easy | String Matching | [🚧 Pending](./Week_2/Day_3/28.cpp) | [🔗](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) |
-| **392** | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | 🟢 Easy | Two Pointers | [🚧 Pending](./Week_2/Day_3/392.cpp) | [🔗](https://leetcode.com/problems/is-subsequence/) |
-| **459** | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) | 🟢 Easy | String Matching | [🚧 Pending](./Week_2/Day_3/459.cpp) | [🔗](https://leetcode.com/problems/repeated-substring-pattern/) |
+| **28** | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | 🟢 Easy | String Matching | [✅ C++](./Week_2/Day_3/1.cpp) | [🔗](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) |
+| **392** | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | 🟢 Easy | Two Pointers | [✅ C++](./Week_2/Day_3/2.cpp) | [🔗](https://leetcode.com/problems/is-subsequence/) |
+| **459** | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) | 🟢 Easy | String Matching | [✅ C++](./Week_2/Day_3/3.cpp) | [🔗](https://leetcode.com/problems/repeated-substring-pattern/) |
 
 #### 🌅 Day 4: Recursion + Strings
 

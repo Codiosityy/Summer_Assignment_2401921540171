@@ -63,7 +63,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
-| **Week 2** | Strings (Advanced) | `12 / 15` | `0 / 1` | Active |
+| **Week 2** | Strings (Advanced) | `15 / 15` | `0 / 1` | DSA Complete |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
 
@@ -73,7 +73,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 Week 1  DSA   ████████████████████  15 / 15  COMPLETE
 Week 1  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 2  DSA   ████████████████████  12 / 15
+Week 2  DSA   ████████████████████  15 / 15  COMPLETE
 Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 
 Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `27 / 60` | 45% |
-| Easy | `19 / 36` | 53% |
-| Medium | `8 / 20` | 40% |
+| **Total DSA Solved** | `30 / 60` | 50% |
+| Easy | `20 / 36` | 56% |
+| Medium | `10 / 20` | 50% |
 | Hard | `0 / 4` | 0% |
 | **Total OOPS Solved** | `1 / 4` | 25% |
-| **Active Days** | `10` | Day 10 of summer |
-| **Overall** | `28 / 64` | 44% |
+| **Active Days** | `11` | Day 11 of summer |
+| **Overall** | `31 / 64` | 48% |
 
 ---
 
@@ -161,6 +161,9 @@ Summer_Assignment_2401921540171/
 │   │   ├── 2.cpp                   # Decode String
 │   │   └── 3.cpp                   # Generate Parentheses
 │   ├── Day_5/                      # Mixed String Problems
+│   │   ├── 1.cpp                   # Group Anagrams
+│   │   ├── 2.cpp                   # String Compression
+│   │   └── 3.cpp                   # Longest Palindromic Substring
 │   └── OOPS/                       # Playable interface (music package)
 │
 ├── Week_3/                         # Linked List + Stack + Queue
@@ -401,6 +404,27 @@ Week 1 DSA complete. All 15 problems done.
 
 </details>
 
+<details>
+<summary><b>Week 2 -- Day 5 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 49: Group Anagrams** -- Group strings that are anagrams of each other.
+> **Approach**: Sort each string to form a hash map key; all strings with the same sorted key belong to the same group.
+> **Time**: O(n * k log k) | **Space**: O(n * k)
+
+**Problem 443: String Compression** -- Compress a character array in-place (e.g., `["a","a","b","b","c","c","c"]` becomes `["a","2","b","2","c","3"]`).
+> **Approach**: Two pointers -- count consecutive runs of each character, write the character and its count (if > 1) back into the array.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 5: Longest Palindromic Substring** -- Find the longest palindromic substring.
+> **Approach**: Expand around center -- for each index, expand outward for both odd and even length palindromes, tracking the longest found.
+> **Time**: O(n^2) | **Space**: O(1)
+
+Week 2 DSA complete. All 15 problems done.
+
+</details>
+
 ---
 
 ### Week 2 -- Strings (Advanced)
@@ -441,9 +465,9 @@ Week 1 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [Pending](./Week_2/Day_5/49.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
-| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [Pending](./Week_2/Day_5/443.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
-| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [Pending](./Week_2/Day_5/5.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
+| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [C++](./Week_2/Day_5/1.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
+| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [C++](./Week_2/Day_5/2.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
+| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [C++](./Week_2/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
 
 ---
 

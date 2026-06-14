@@ -63,7 +63,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 | Week | Focus Area | DSA Done | OOPS Done | Status |
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
-| **Week 2** | Strings (Advanced) | `15 / 15` | `0 / 1` | DSA Complete |
+| **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
 | **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | Pending |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
 
@@ -74,7 +74,7 @@ Week 1  DSA   ████████████████████  15 /
 Week 1  OOPS  ████████████████████  1 / 1    COMPLETE
 
 Week 2  DSA   ████████████████████  15 / 15  COMPLETE
-Week 2  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
+Week 2  OOPS  ████████████████████  1 / 1    COMPLETE
 
 Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
 Week 3  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
@@ -91,9 +91,9 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 | Easy | `20 / 36` | 56% |
 | Medium | `10 / 20` | 50% |
 | Hard | `0 / 4` | 0% |
-| **Total OOPS Solved** | `1 / 4` | 25% |
+| **Total OOPS Solved** | `2 / 4` | 50% |
 | **Active Days** | `11` | Day 11 of summer |
-| **Overall** | `31 / 64` | 48% |
+| **Overall** | `32 / 64` | 50% |
 
 ---
 
@@ -165,6 +165,10 @@ Summer_Assignment_2401921540171/
 │   │   ├── 2.cpp                   # String Compression
 │   │   └── 3.cpp                   # Longest Palindromic Substring
 │   └── OOPS/                       # Playable interface (music package)
+│       ├── src/music/Playable.java
+│       ├── src/music/string/Veena.java
+│       ├── src/music/wind/Saxophone.java
+│       └── src/live/Test.java
 │
 ├── Week_3/                         # Linked List + Stack + Queue
 │   ├── Day_1/                      # Linked List Basics
@@ -568,7 +572,7 @@ One OOPS topic per week, Java-based.
 | Week | Topic | Concepts | Files | Status |
 |:----:|-------|----------|-------|:------:|
 | **Week 1** | Interfaces -- LibraryUser | Interface, Polymorphism, Encapsulation | [4 files](./Week_1/OOPS/) | Done |
-| **Week 2** | Interfaces -- Playable | Interface, Packages, Polymorphism | [PlayableDemo.java](./Week_2/OOPS/PlayableDemo.java) | Pending |
+| **Week 2** | Interfaces -- Playable | Interface, Packages, Polymorphism | [4 files](./Week_2/OOPS/) | Done |
 | **Week 3** | Abstract Class -- Compartment | Abstract Class, Polymorphism, Random Behavior | [TestCompartment.java](./Week_3/OOPS/TestCompartment.java) | Pending |
 | **Week 4** | Mixed (4 sub-questions) | Interface, Inner Class, Class Design, Inheritance | [1-4 files](./Week_4/OOPS/) | Pending |
 

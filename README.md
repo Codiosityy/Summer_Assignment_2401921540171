@@ -64,7 +64,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
-| **Week 3** | Linked List + Stack + Queue | `0 / 15` | `0 / 1` | Pending |
+| **Week 3** | Linked List + Stack + Queue | `3 / 15` | `0 / 1` | Active |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
 
 ### Visual Progress
@@ -76,7 +76,7 @@ Week 1  OOPS  ████████████████████  1 / 
 Week 2  DSA   ████████████████████  15 / 15  COMPLETE
 Week 2  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 3  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
+Week 3  DSA   ████████░░░░░░░░░░░░  3 / 15
 Week 3  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 
 Week 4  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `30 / 60` | 50% |
-| Easy | `20 / 36` | 56% |
+| **Total DSA Solved** | `33 / 60` | 55% |
+| Easy | `23 / 36` | 64% |
 | Medium | `10 / 20` | 50% |
 | Hard | `0 / 4` | 0% |
 | **Total OOPS Solved** | `2 / 4` | 50% |
-| **Active Days** | `11` | Day 11 of summer |
-| **Overall** | `32 / 64` | 50% |
+| **Active Days** | `12` | Day 12 of summer |
+| **Overall** | `35 / 64` | 55% |
 
 ---
 
@@ -172,6 +172,9 @@ Summer_Assignment_2401921540171/
 │
 ├── Week_3/                         # Linked List + Stack + Queue
 │   ├── Day_1/                      # Linked List Basics
+│   │   ├── 1.cpp                   # Linked List Cycle
+│   │   ├── 2.cpp                   # Reverse Linked List
+│   │   └── 3.cpp                   # Middle of the Linked List
 │   ├── Day_2/                      # Linked List Advanced
 │   ├── Day_3/                      # Stack Basics
 │   ├── Day_4/                      # Stack Advanced (Monotonic)
@@ -429,6 +432,25 @@ Week 2 DSA complete. All 15 problems done.
 
 </details>
 
+<details>
+<summary><b>Week 3 -- Day 1 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 141: Linked List Cycle** -- Detect if a linked list has a cycle.
+> **Approach**: Floyd's cycle detection -- slow pointer moves one step, fast pointer moves two steps; if they meet, a cycle exists.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 206: Reverse Linked List** -- Reverse a singly linked list.
+> **Approach**: Iterative pointer rewiring -- maintain `prev`, `curr`, and `nextNode`; reverse each link as you traverse.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 876: Middle of the Linked List** -- Find the middle node of a linked list.
+> **Approach**: Slow and fast pointers -- when fast reaches the end, slow is at the middle.
+> **Time**: O(n) | **Space**: O(1)
+
+</details>
+
 ---
 
 ### Week 2 -- Strings (Advanced)
@@ -481,9 +503,9 @@ Week 2 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **141** | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Easy | Fast & Slow Pointers | [Pending](./Week_3/Day_1/141.cpp) | [Link](https://leetcode.com/problems/linked-list-cycle/) |
-| **206** | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Easy | Pointer Manipulation | [Pending](./Week_3/Day_1/206.cpp) | [Link](https://leetcode.com/problems/reverse-linked-list/) |
-| **876** | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | Easy | Fast & Slow Pointers | [Pending](./Week_3/Day_1/876.cpp) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) |
+| **141** | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/1.cpp) | [Link](https://leetcode.com/problems/linked-list-cycle/) |
+| **206** | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Easy | Pointer Manipulation | [C++](./Week_3/Day_1/2.cpp) | [Link](https://leetcode.com/problems/reverse-linked-list/) |
+| **876** | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/3.cpp) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) |
 
 #### Day 2: Linked List Advanced
 

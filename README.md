@@ -64,7 +64,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
-| **Week 3** | Linked List + Stack + Queue | `3 / 15` | `0 / 1` | Active |
+| **Week 3** | Linked List + Stack + Queue | `9 / 15` | `0 / 1` | Active |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
 
 ### Visual Progress
@@ -76,7 +76,7 @@ Week 1  OOPS  ████████████████████  1 / 
 Week 2  DSA   ████████████████████  15 / 15  COMPLETE
 Week 2  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 3  DSA   ████████░░░░░░░░░░░░  3 / 15
+Week 3  DSA   ██████████████░░░░░░  9 / 15
 Week 3  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 
 Week 4  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `33 / 60` | 55% |
-| Easy | `23 / 36` | 64% |
+| **Total DSA Solved** | `39 / 60` | 65% |
+| Easy | `29 / 36` | 81% |
 | Medium | `10 / 20` | 50% |
 | Hard | `0 / 4` | 0% |
 | **Total OOPS Solved** | `2 / 4` | 50% |
-| **Active Days** | `12` | Day 12 of summer |
-| **Overall** | `35 / 64` | 55% |
+| **Active Days** | `14` | Day 14 of summer |
+| **Overall** | `41 / 64` | 64% |
 
 ---
 
@@ -176,7 +176,13 @@ Summer_Assignment_2401921540171/
 │   │   ├── 2.cpp                   # Reverse Linked List
 │   │   └── 3.cpp                   # Middle of the Linked List
 │   ├── Day_2/                      # Linked List Advanced
+│   │   ├── 1.cpp                   # Merge Two Sorted Lists
+│   │   ├── 2.cpp                   # Remove Nth Node From End of List
+│   │   └── 3.cpp                   # Palindrome Linked List
 │   ├── Day_3/                      # Stack Basics
+│   │   ├── 1.cpp                   # Valid Parentheses
+│   │   ├── 2.cpp                   # Min Stack
+│   │   └── 3.cpp                   # Next Greater Element I
 │   ├── Day_4/                      # Stack Advanced (Monotonic)
 │   ├── Day_5/                      # Queue / Deque
 │   └── OOPS/                       # Abstract Compartment class
@@ -335,6 +341,50 @@ Week 1 DSA complete. All 15 problems done.
 
 </details>
 
+---
+
+### Week 2 -- Strings (Advanced)
+
+#### Day 1: Hashing in Strings
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **242** | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/1.cpp) | [Link](https://leetcode.com/problems/valid-anagram/) |
+| **387** | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/2.cpp) | [Link](https://leetcode.com/problems/first-unique-character-in-a-string/) |
+| **383** | [Ransom Note](https://leetcode.com/problems/ransom-note/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/3.cpp) | [Link](https://leetcode.com/problems/ransom-note/) |
+
+#### Day 2: Sliding Window on Strings
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/1.cpp) | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| **567** | [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/2.cpp) | [Link](https://leetcode.com/problems/permutation-in-string/) |
+| **438** | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/3.cpp) | [Link](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
+
+#### Day 3: Pattern Matching
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **28** | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | Easy | String Matching | [C++](./Week_2/Day_3/1.cpp) | [Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) |
+| **392** | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | Easy | Two Pointers | [C++](./Week_2/Day_3/2.cpp) | [Link](https://leetcode.com/problems/is-subsequence/) |
+| **459** | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) | Easy | String Matching | [C++](./Week_2/Day_3/3.cpp) | [Link](https://leetcode.com/problems/repeated-substring-pattern/) |
+
+#### Day 4: Recursion + Strings
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **557** | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) | Easy | String Manipulation | [C++](./Week_2/Day_4/1.cpp) | [Link](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |
+| **394** | [Decode String](https://leetcode.com/problems/decode-string/description/) | Medium | Stack | [C++](./Week_2/Day_4/2.cpp) | [Link](https://leetcode.com/problems/decode-string/) |
+| **22** | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Backtracking | [C++](./Week_2/Day_4/3.cpp) | [Link](https://leetcode.com/problems/generate-parentheses/) |
+
+#### Day 5: Mixed String Problems
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [C++](./Week_2/Day_5/1.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
+| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [C++](./Week_2/Day_5/2.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
+| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [C++](./Week_2/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
+
 <details>
 <summary><b>Week 2 -- Day 1 Solution Summaries</b></summary>
 
@@ -432,6 +482,50 @@ Week 2 DSA complete. All 15 problems done.
 
 </details>
 
+---
+
+### Week 3 -- Linked List + Stack + Queue
+
+#### Day 1: Linked List Basics
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **141** | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/1.cpp) | [Link](https://leetcode.com/problems/linked-list-cycle/) |
+| **206** | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Easy | Pointer Manipulation | [C++](./Week_3/Day_1/2.cpp) | [Link](https://leetcode.com/problems/reverse-linked-list/) |
+| **876** | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/3.cpp) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) |
+
+#### Day 2: Linked List Advanced
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **21** | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy | Linked List | [C++](./Week_3/Day_2/1.cpp) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| **19** | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Medium | Two Pointers | [C++](./Week_3/Day_2/2.cpp) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
+| **234** | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_2/3.cpp) | [Link](https://leetcode.com/problems/palindrome-linked-list/) |
+
+#### Day 3: Stack Basics
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **20** | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stack | [C++](./Week_3/Day_3/1.cpp) | [Link](https://leetcode.com/problems/valid-parentheses/) |
+| **155** | [Min Stack](https://leetcode.com/problems/min-stack/description/) | Medium | Stack Design | [C++](./Week_3/Day_3/2.cpp) | [Link](https://leetcode.com/problems/min-stack/) |
+| **496** | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) | Easy | Monotonic Stack | [C++](./Week_3/Day_3/3.cpp) | [Link](https://leetcode.com/problems/next-greater-element-i/) |
+
+#### Day 4: Stack Advanced (Monotonic)
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [Pending](./Week_3/Day_4/739.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
+| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [Pending](./Week_3/Day_4/150.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [Pending](./Week_3/Day_4/84.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
+
+#### Day 5: Queue / Deque
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [Pending](./Week_3/Day_5/232.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
+| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [Pending](./Week_3/Day_5/933.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
+| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [Pending](./Week_3/Day_5/239.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
+
 <details>
 <summary><b>Week 3 -- Day 1 Solution Summaries</b></summary>
 
@@ -451,93 +545,43 @@ Week 2 DSA complete. All 15 problems done.
 
 </details>
 
----
+<details>
+<summary><b>Week 3 -- Day 2 Solution Summaries</b></summary>
 
-### Week 2 -- Strings (Advanced)
+<br/>
 
-#### Day 1: Hashing in Strings
+**Problem 21: Merge Two Sorted Lists** -- Merge two sorted linked lists into one sorted list.
+> **Approach**: Dummy node with tail pointer -- compare heads of both lists, append the smaller node, append the remaining list at the end.
+> **Time**: O(n + m) | **Space**: O(1)
 
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **242** | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/1.cpp) | [Link](https://leetcode.com/problems/valid-anagram/) |
-| **387** | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/2.cpp) | [Link](https://leetcode.com/problems/first-unique-character-in-a-string/) |
-| **383** | [Ransom Note](https://leetcode.com/problems/ransom-note/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/3.cpp) | [Link](https://leetcode.com/problems/ransom-note/) |
+**Problem 19: Remove Nth Node From End of List** -- Remove the nth node from the end of a linked list in one pass.
+> **Approach**: Two pointers with dummy node -- advance fast pointer n steps ahead, then move both pointers together until fast reaches the end; remove slow's next node.
+> **Time**: O(n) | **Space**: O(1)
 
-#### Day 2: Sliding Window on Strings
+**Problem 234: Palindrome Linked List** -- Check if a linked list is a palindrome.
+> **Approach**: Find middle, reverse second half, compare both halves node by node.
+> **Time**: O(n) | **Space**: O(1)
 
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/1.cpp) | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
-| **567** | [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/2.cpp) | [Link](https://leetcode.com/problems/permutation-in-string/) |
-| **438** | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/3.cpp) | [Link](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
+</details>
 
-#### Day 3: Pattern Matching
+<details>
+<summary><b>Week 3 -- Day 3 Solution Summaries</b></summary>
 
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **28** | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | Easy | String Matching | [C++](./Week_2/Day_3/1.cpp) | [Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) |
-| **392** | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | Easy | Two Pointers | [C++](./Week_2/Day_3/2.cpp) | [Link](https://leetcode.com/problems/is-subsequence/) |
-| **459** | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) | Easy | String Matching | [C++](./Week_2/Day_3/3.cpp) | [Link](https://leetcode.com/problems/repeated-substring-pattern/) |
+<br/>
 
-#### Day 4: Recursion + Strings
+**Problem 20: Valid Parentheses** -- Check if a string of brackets is valid.
+> **Approach**: Stack -- push opening brackets, pop and match on each closing bracket; return true if stack is empty at the end.
+> **Time**: O(n) | **Space**: O(n)
 
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **557** | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) | Easy | String Manipulation | [C++](./Week_2/Day_4/1.cpp) | [Link](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |
-| **394** | [Decode String](https://leetcode.com/problems/decode-string/description/) | Medium | Stack | [C++](./Week_2/Day_4/2.cpp) | [Link](https://leetcode.com/problems/decode-string/) |
-| **22** | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Backtracking | [C++](./Week_2/Day_4/3.cpp) | [Link](https://leetcode.com/problems/generate-parentheses/) |
+**Problem 155: Min Stack** -- Design a stack that supports push, pop, top, and retrieving the minimum element in O(1).
+> **Approach**: Two stacks -- one for values, one tracking the minimum at each level; push the running min alongside each value.
+> **Time**: O(1) per operation | **Space**: O(n)
 
-#### Day 5: Mixed String Problems
+**Problem 496: Next Greater Element I** -- Find the next greater element for each element in nums1, given nums2.
+> **Approach**: Monotonic decreasing stack -- traverse nums2, record the next greater element for each value in a hash map; look up answers for nums1.
+> **Time**: O(n + m) | **Space**: O(n)
 
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [C++](./Week_2/Day_5/1.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
-| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [C++](./Week_2/Day_5/2.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
-| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [C++](./Week_2/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
-
----
-
-### Week 3 -- Linked List + Stack + Queue
-
-#### Day 1: Linked List Basics
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **141** | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/1.cpp) | [Link](https://leetcode.com/problems/linked-list-cycle/) |
-| **206** | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Easy | Pointer Manipulation | [C++](./Week_3/Day_1/2.cpp) | [Link](https://leetcode.com/problems/reverse-linked-list/) |
-| **876** | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/3.cpp) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) |
-
-#### Day 2: Linked List Advanced
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **21** | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy | Linked List | [Pending](./Week_3/Day_2/21.cpp) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| **19** | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Medium | Two Pointers | [Pending](./Week_3/Day_2/19.cpp) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
-| **234** | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | Easy | Fast & Slow Pointers | [Pending](./Week_3/Day_2/234.cpp) | [Link](https://leetcode.com/problems/palindrome-linked-list/) |
-
-#### Day 3: Stack Basics
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **20** | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stack | [Pending](./Week_3/Day_3/20.cpp) | [Link](https://leetcode.com/problems/valid-parentheses/) |
-| **155** | [Min Stack](https://leetcode.com/problems/min-stack/description/) | Medium | Stack Design | [Pending](./Week_3/Day_3/155.cpp) | [Link](https://leetcode.com/problems/min-stack/) |
-| **496** | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) | Easy | Monotonic Stack | [Pending](./Week_3/Day_3/496.cpp) | [Link](https://leetcode.com/problems/next-greater-element-i/) |
-
-#### Day 4: Stack Advanced (Monotonic)
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [Pending](./Week_3/Day_4/739.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
-| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [Pending](./Week_3/Day_4/150.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
-| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [Pending](./Week_3/Day_4/84.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
-
-#### Day 5: Queue / Deque
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [Pending](./Week_3/Day_5/232.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
-| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [Pending](./Week_3/Day_5/933.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
-| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [Pending](./Week_3/Day_5/239.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
+</details>
 
 ---
 

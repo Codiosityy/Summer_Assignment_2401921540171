@@ -64,7 +64,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
-| **Week 3** | Linked List + Stack + Queue | `9 / 15` | `0 / 1` | Active |
+| **Week 3** | Linked List + Stack + Queue | `15 / 15` | `0 / 1` | DSA Complete |
 | **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
 
 ### Visual Progress
@@ -76,7 +76,7 @@ Week 1  OOPS  ████████████████████  1 / 
 Week 2  DSA   ████████████████████  15 / 15  COMPLETE
 Week 2  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 3  DSA   ██████████████░░░░░░  9 / 15
+Week 3  DSA   ████████████████████  15 / 15  COMPLETE
 Week 3  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 
 Week 4  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `39 / 60` | 65% |
-| Easy | `29 / 36` | 81% |
-| Medium | `10 / 20` | 50% |
-| Hard | `0 / 4` | 0% |
+| **Total DSA Solved** | `45 / 60` | 75% |
+| Easy | `31 / 36` | 86% |
+| Medium | `12 / 20` | 60% |
+| Hard | `2 / 4` | 50% |
 | **Total OOPS Solved** | `2 / 4` | 50% |
-| **Active Days** | `14` | Day 14 of summer |
-| **Overall** | `41 / 64` | 64% |
+| **Active Days** | `16` | Day 16 of summer |
+| **Overall** | `47 / 64` | 73% |
 
 ---
 
@@ -184,7 +184,13 @@ Summer_Assignment_2401921540171/
 │   │   ├── 2.cpp                   # Min Stack
 │   │   └── 3.cpp                   # Next Greater Element I
 │   ├── Day_4/                      # Stack Advanced (Monotonic)
+│   │   ├── 1.cpp                   # Daily Temperatures
+│   │   ├── 2.cpp                   # Evaluate Reverse Polish Notation
+│   │   └── 3.cpp                   # Largest Rectangle in Histogram
 │   ├── Day_5/                      # Queue / Deque
+│   │   ├── 1.cpp                   # Implement Queue using Stacks
+│   │   ├── 2.cpp                   # Number of Recent Calls
+│   │   └── 3.cpp                   # Sliding Window Maximum
 │   └── OOPS/                       # Abstract Compartment class
 │
 └── Week_4/                         # Trees
@@ -514,17 +520,17 @@ Week 2 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [Pending](./Week_3/Day_4/739.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
-| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [Pending](./Week_3/Day_4/150.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
-| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [Pending](./Week_3/Day_4/84.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
+| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [C++](./Week_3/Day_4/1.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
+| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [C++](./Week_3/Day_4/2.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [C++](./Week_3/Day_4/3.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
 
 #### Day 5: Queue / Deque
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [Pending](./Week_3/Day_5/232.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
-| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [Pending](./Week_3/Day_5/933.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
-| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [Pending](./Week_3/Day_5/239.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
+| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [C++](./Week_3/Day_5/1.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
+| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [C++](./Week_3/Day_5/2.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
+| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [C++](./Week_3/Day_5/3.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
 
 <details>
 <summary><b>Week 3 -- Day 1 Solution Summaries</b></summary>
@@ -580,6 +586,46 @@ Week 2 DSA complete. All 15 problems done.
 **Problem 496: Next Greater Element I** -- Find the next greater element for each element in nums1, given nums2.
 > **Approach**: Monotonic decreasing stack -- traverse nums2, record the next greater element for each value in a hash map; look up answers for nums1.
 > **Time**: O(n + m) | **Space**: O(n)
+
+</details>
+
+<details>
+<summary><b>Week 3 -- Day 4 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 739: Daily Temperatures** -- For each day, find how many days you have to wait until a warmer temperature.
+> **Approach**: Monotonic decreasing stack of indices -- traverse from right to left, pop shorter or equal temperatures, record the gap.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 150: Evaluate Reverse Polish Notation** -- Evaluate an arithmetic expression in postfix notation.
+> **Approach**: Stack -- push operands; on each operator, pop two values, apply the operation, push the result back.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 84: Largest Rectangle in Histogram** -- Find the area of the largest rectangle in a histogram.
+> **Approach**: Monotonic increasing stack of indices -- when a shorter bar appears, compute areas using popped bars as the limiting height.
+> **Time**: O(n) | **Space**: O(n)
+
+</details>
+
+<details>
+<summary><b>Week 3 -- Day 5 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 232: Implement Queue using Stacks** -- Implement a FIFO queue using only two stacks.
+> **Approach**: Two stacks -- push into inputStack, pop/front from outputStack; transfer elements only when outputStack is empty.
+> **Time**: Amortized O(1) per operation | **Space**: O(n)
+
+**Problem 933: Number of Recent Calls** -- Count the number of recent calls within the last 3000 ms.
+> **Approach**: Queue -- maintain a sliding window of call timestamps; pop outdated calls, return the queue size.
+> **Time**: Amortized O(1) per ping | **Space**: O(n)
+
+**Problem 239: Sliding Window Maximum** -- Find the maximum value in each sliding window of size k.
+> **Approach**: Monotonic decreasing deque of indices -- keep the deque within the current window, maintain the maximum at the front.
+> **Time**: O(n) | **Space**: O(k)
+
+Week 3 DSA complete. All 15 problems done.
 
 </details>
 

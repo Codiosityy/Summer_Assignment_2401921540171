@@ -64,8 +64,8 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 |:----:|------------|:--------:|:---------:|:------:|
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
-| **Week 3** | Linked List + Stack + Queue | `15 / 15` | `0 / 1` | DSA Complete |
-| **Week 4** | Trees | `0 / 15` | `0 / 1` | Pending |
+| **Week 3** | Linked List + Stack + Queue | `15 / 15` | `1 / 1` | Complete |
+| **Week 4** | Trees | `3 / 15` | `0 / 1` | Active |
 
 ### Visual Progress
 
@@ -77,9 +77,9 @@ Week 2  DSA   ████████████████████  15 /
 Week 2  OOPS  ████████████████████  1 / 1    COMPLETE
 
 Week 3  DSA   ████████████████████  15 / 15  COMPLETE
-Week 3  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
+Week 3  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 4  DSA   ░░░░░░░░░░░░░░░░░░░░  0 / 15
+Week 4  DSA   ████████░░░░░░░░░░░░  3 / 15
 Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 ```
 
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `45 / 60` | 75% |
-| Easy | `31 / 36` | 86% |
+| **Total DSA Solved** | `48 / 60` | 80% |
+| Easy | `34 / 36` | 94% |
 | Medium | `12 / 20` | 60% |
 | Hard | `2 / 4` | 50% |
-| **Total OOPS Solved** | `2 / 4` | 50% |
-| **Active Days** | `16` | Day 16 of summer |
-| **Overall** | `47 / 64` | 73% |
+| **Total OOPS Solved** | `3 / 4` | 75% |
+| **Active Days** | `17` | Day 17 of summer |
+| **Overall** | `51 / 64` | 80% |
 
 ---
 
@@ -192,9 +192,18 @@ Summer_Assignment_2401921540171/
 │   │   ├── 2.cpp                   # Number of Recent Calls
 │   │   └── 3.cpp                   # Sliding Window Maximum
 │   └── OOPS/                       # Abstract Compartment class
+│       ├── src/compartment/Compartment.java
+│       ├── src/compartment/FirstClass.java
+│       ├── src/compartment/Ladies.java
+│       ├── src/compartment/General.java
+│       ├── src/compartment/Luggage.java
+│       └── src/test/TestCompartment.java
 │
 └── Week_4/                         # Trees
     ├── Day_1/                      # Binary Tree Basics
+    │   ├── 1.cpp                   # Maximum Depth of Binary Tree
+    │   ├── 2.cpp                   # Invert Binary Tree
+    │   └── 3.cpp                   # Same Tree
     ├── Day_2/                      # Traversals
     ├── Day_3/                      # Binary Search Tree
     ├── Day_4/                      # Path Based Problems
@@ -637,9 +646,28 @@ Week 3 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **104** | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | DFS | [Pending](./Week_4/Day_1/104.cpp) | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
-| **226** | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy | BFS / DFS | [Pending](./Week_4/Day_1/226.cpp) | [Link](https://leetcode.com/problems/invert-binary-tree/) |
-| **100** | [Same Tree](https://leetcode.com/problems/same-tree/description/) | Easy | DFS | [Pending](./Week_4/Day_1/100.cpp) | [Link](https://leetcode.com/problems/same-tree/) |
+| **104** | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | DFS | [C++](./Week_4/Day_1/1.cpp) | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
+| **226** | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy | BFS / DFS | [C++](./Week_4/Day_1/2.cpp) | [Link](https://leetcode.com/problems/invert-binary-tree/) |
+| **100** | [Same Tree](https://leetcode.com/problems/same-tree/description/) | Easy | DFS | [C++](./Week_4/Day_1/3.cpp) | [Link](https://leetcode.com/problems/same-tree/) |
+
+<details>
+<summary><b>Week 4 -- Day 1 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 104: Maximum Depth of Binary Tree** -- Find the maximum depth of a binary tree.
+> **Approach**: DFS recursion -- depth is 1 + max(left subtree depth, right subtree depth).
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 226: Invert Binary Tree** -- Invert a binary tree (mirror it).
+> **Approach**: DFS recursion -- swap left and right children at every node, then recurse.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 100: Same Tree** -- Check if two binary trees are identical.
+> **Approach**: DFS recursion -- compare nodes recursively; match if both null, mismatch if one null or values differ.
+> **Time**: O(n) | **Space**: O(h)
+
+</details>
 
 #### Day 2: Traversals
 
@@ -685,7 +713,7 @@ One OOPS topic per week, Java-based.
 |:----:|-------|----------|-------|:------:|
 | **Week 1** | Interfaces -- LibraryUser | Interface, Polymorphism, Encapsulation | [4 files](./Week_1/OOPS/) | Done |
 | **Week 2** | Interfaces -- Playable | Interface, Packages, Polymorphism | [4 files](./Week_2/OOPS/) | Done |
-| **Week 3** | Abstract Class -- Compartment | Abstract Class, Polymorphism, Random Behavior | [TestCompartment.java](./Week_3/OOPS/TestCompartment.java) | Pending |
+| **Week 3** | Abstract Class -- Compartment | Abstract Class, Polymorphism, Random Behavior | [6 files](./Week_3/OOPS/) | Done |
 | **Week 4** | Mixed (4 sub-questions) | Interface, Inner Class, Class Design, Inheritance | [1-4 files](./Week_4/OOPS/) | Pending |
 
 ### OOPS Problem Briefs

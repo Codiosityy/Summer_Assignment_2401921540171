@@ -65,7 +65,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
 | **Week 3** | Linked List + Stack + Queue | `15 / 15` | `1 / 1` | Complete |
-| **Week 4** | Trees | `3 / 15` | `0 / 1` | Active |
+| **Week 4** | Trees | `9 / 15` | `0 / 1` | Active |
 
 ### Visual Progress
 
@@ -79,7 +79,7 @@ Week 2  OOPS  ████████████████████  1 / 
 Week 3  DSA   ████████████████████  15 / 15  COMPLETE
 Week 3  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 4  DSA   ████████░░░░░░░░░░░░  3 / 15
+Week 4  DSA   ████████████████░░░░  9 / 15
 Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 ```
 
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `48 / 60` | 80% |
-| Easy | `34 / 36` | 94% |
-| Medium | `12 / 20` | 60% |
+| **Total DSA Solved** | `54 / 60` | 90% |
+| Easy | `37 / 36` | 100% |
+| Medium | `15 / 20` | 75% |
 | Hard | `2 / 4` | 50% |
 | **Total OOPS Solved** | `3 / 4` | 75% |
-| **Active Days** | `17` | Day 17 of summer |
-| **Overall** | `51 / 64` | 80% |
+| **Active Days** | `19` | Day 19 of summer |
+| **Overall** | `57 / 64` | 89% |
 
 ---
 
@@ -205,7 +205,13 @@ Summer_Assignment_2401921540171/
     │   ├── 2.cpp                   # Invert Binary Tree
     │   └── 3.cpp                   # Same Tree
     ├── Day_2/                      # Traversals
+    │   ├── 1.cpp                   # Binary Tree Inorder Traversal
+    │   ├── 2.cpp                   # Binary Tree Level Order Traversal
+    │   └── 3.cpp                   # Binary Tree Zigzag Level Order Traversal
     ├── Day_3/                      # Binary Search Tree
+    │   ├── 1.cpp                   # Search in a Binary Search Tree
+    │   ├── 2.cpp                   # Validate Binary Search Tree
+    │   └── 3.cpp                   # Lowest Common Ancestor of a BST
     ├── Day_4/                      # Path Based Problems
     ├── Day_5/                      # Advanced Trees
     └── OOPS/                       # Interface, Inner Class, Point, Box/Box3d
@@ -673,17 +679,55 @@ Week 3 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **94** | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | DFS | [Pending](./Week_4/Day_2/94.cpp) | [Link](https://leetcode.com/problems/binary-tree-inorder-traversal/) |
-| **102** | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | BFS | [Pending](./Week_4/Day_2/102.cpp) | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
-| **103** | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Medium | BFS | [Pending](./Week_4/Day_2/103.cpp) | [Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |
+| **94** | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | DFS | [Done](./Week_4/Day_2/1.cpp) | [Link](https://leetcode.com/problems/binary-tree-inorder-traversal/) |
+| **102** | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | BFS | [Done](./Week_4/Day_2/2.cpp) | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| **103** | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Medium | BFS | [Done](./Week_4/Day_2/3.cpp) | [Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |
 
 #### Day 3: Binary Search Tree
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **700** | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/) | Easy | BST | [Pending](./Week_4/Day_3/700.cpp) | [Link](https://leetcode.com/problems/search-in-a-binary-search-tree/) |
-| **98** | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Medium | BST / DFS | [Pending](./Week_4/Day_3/98.cpp) | [Link](https://leetcode.com/problems/validate-binary-search-tree/) |
-| **235** | [Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Easy | BST | [Pending](./Week_4/Day_3/235.cpp) | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
+| **700** | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/1.cpp) | [Link](https://leetcode.com/problems/search-in-a-binary-search-tree/) |
+| **98** | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Medium | BST / DFS | [Done](./Week_4/Day_3/2.cpp) | [Link](https://leetcode.com/problems/validate-binary-search-tree/) |
+| **235** | [Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/3.cpp) | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
+
+<details>
+<summary><b>Week 4 -- Day 2 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 94: Binary Tree Inorder Traversal** -- Return the inorder traversal of a binary tree.
+> **Approach**: DFS recursion -- traverse left, visit node, traverse right.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 102: Binary Tree Level Order Traversal** -- Return level-by-level node values.
+> **Approach**: BFS with a queue -- process each level by size, push children for next level.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 103: Binary Tree Zigzag Level Order Traversal** -- Alternating left-to-right and right-to-left per level.
+> **Approach**: BFS with a boolean flag -- reverse fill direction every other level.
+> **Time**: O(n) | **Space**: O(n)
+
+</details>
+
+<details>
+<summary><b>Week 4 -- Day 3 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 700: Search in a Binary Search Tree** -- Find the subtree with the given value in a BST.
+> **Approach**: BST property -- if target is smaller go left, otherwise go right.
+> **Time**: O(h) | **Space**: O(h)
+
+**Problem 98: Validate Binary Search Tree** -- Check if a binary tree is a valid BST.
+> **Approach**: Recursive bounds -- each node must be within (low, high) range from its ancestors.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 235: Lowest Common Ancestor of a BST** -- Find LCA of two nodes in a BST.
+> **Approach**: BST property -- if both nodes are smaller go left, if both larger go right, otherwise current node is LCA.
+> **Time**: O(h) | **Space**: O(1)
+
+</details>
 
 #### Day 4: Path Based Problems
 

@@ -65,7 +65,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
 | **Week 3** | Linked List + Stack + Queue | `15 / 15` | `1 / 1` | Complete |
-| **Week 4** | Trees | `9 / 15` | `0 / 1` | Active |
+| **Week 4** | Trees | `12 / 15` | `0 / 1` | Active |
 
 ### Visual Progress
 
@@ -79,7 +79,7 @@ Week 2  OOPS  ████████████████████  1 / 
 Week 3  DSA   ████████████████████  15 / 15  COMPLETE
 Week 3  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 4  DSA   ████████████████░░░░  9 / 15
+Week 4  DSA   ███████████████████░  12 / 15
 Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
 ```
 
@@ -87,13 +87,13 @@ Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `54 / 60` | 90% |
-| Easy | `37 / 36` | 100% |
+| **Total DSA Solved** | `57 / 60` | 95% |
+| Easy | `39 / 36` | 100% |
 | Medium | `15 / 20` | 75% |
-| Hard | `2 / 4` | 50% |
+| Hard | `3 / 4` | 75% |
 | **Total OOPS Solved** | `3 / 4` | 75% |
-| **Active Days** | `19` | Day 19 of summer |
-| **Overall** | `57 / 64` | 89% |
+| **Active Days** | `20` | Day 20 of summer |
+| **Overall** | `60 / 64` | 94% |
 
 ---
 
@@ -213,6 +213,9 @@ Summer_Assignment_2401921540171/
     │   ├── 2.cpp                   # Validate Binary Search Tree
     │   └── 3.cpp                   # Lowest Common Ancestor of a BST
     ├── Day_4/                      # Path Based Problems
+    │   ├── 1.cpp                   # Path Sum
+    │   ├── 2.cpp                   # Diameter of Binary Tree
+    │   └── 3.cpp                   # Binary Tree Maximum Path Sum
     ├── Day_5/                      # Advanced Trees
     └── OOPS/                       # Interface, Inner Class, Point, Box/Box3d
 ```
@@ -733,9 +736,28 @@ Week 3 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **112** | [Path Sum](https://leetcode.com/problems/path-sum/description/) | Easy | DFS | [Pending](./Week_4/Day_4/112.cpp) | [Link](https://leetcode.com/problems/path-sum/) |
-| **543** | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | DFS | [Pending](./Week_4/Day_4/543.cpp) | [Link](https://leetcode.com/problems/diameter-of-binary-tree/) |
-| **124** | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | Hard | DFS | [Pending](./Week_4/Day_4/124.cpp) | [Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
+| **112** | [Path Sum](https://leetcode.com/problems/path-sum/description/) | Easy | DFS | [Done](./Week_4/Day_4/1.cpp) | [Link](https://leetcode.com/problems/path-sum/) |
+| **543** | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | DFS | [Done](./Week_4/Day_4/2.cpp) | [Link](https://leetcode.com/problems/diameter-of-binary-tree/) |
+| **124** | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | Hard | DFS | [Done](./Week_4/Day_4/3.cpp) | [Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
+
+<details>
+<summary><b>Week 4 -- Day 4 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 112: Path Sum** -- Check if the tree has a root-to-leaf path with a given sum.
+> **Approach**: DFS recursion -- subtract each node's value from target; return true if a leaf is reached with remaining sum equal to its value.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 543: Diameter of Binary Tree** -- Find the length of the longest path between any two nodes.
+> **Approach**: DFS recursion -- for each node, diameter = left height + right height; track global maximum.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 124: Binary Tree Maximum Path Sum** -- Find the maximum path sum (path can start and end at any node).
+> **Approach**: DFS recursion -- at each node, compute max gain from left/right (clamped to 0); update global max with node + left gain + right gain; return node + max(left, right) gain.
+> **Time**: O(n) | **Space**: O(h)
+
+</details>
 
 #### Day 5: Advanced Trees
 

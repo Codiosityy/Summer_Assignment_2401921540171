@@ -445,60 +445,6 @@ Legend: Easy | Medium | Hard | Done | Pending
 | **392** | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | Easy | Two Pointers | [C++](./Week_2/Day_3/2.cpp) | [Link](https://leetcode.com/problems/is-subsequence/) |
 | **459** | [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/description/) | Easy | String Matching | [C++](./Week_2/Day_3/3.cpp) | [Link](https://leetcode.com/problems/repeated-substring-pattern/) |
 
-#### Day 4: Recursion + Strings
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **557** | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) | Easy | String Manipulation | [C++](./Week_2/Day_4/1.cpp) | [Link](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |
-| **394** | [Decode String](https://leetcode.com/problems/decode-string/description/) | Medium | Stack | [C++](./Week_2/Day_4/2.cpp) | [Link](https://leetcode.com/problems/decode-string/) |
-| **22** | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Backtracking | [C++](./Week_2/Day_4/3.cpp) | [Link](https://leetcode.com/problems/generate-parentheses/) |
-
-#### Day 5: Mixed String Problems
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [C++](./Week_2/Day_5/1.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
-| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [C++](./Week_2/Day_5/2.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
-| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [C++](./Week_2/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
-
-<details>
-<summary><b>Week 2 -- Day 1 Solution Summaries</b></summary>
-
-<br/>
-
-**Problem 242: Valid Anagram** -- Check if two strings are anagrams of each other.
-> **Approach**: Use a fixed-size array of 26 counters; increment for `s`, decrement for `t`; if all counters are zero, they're anagrams.
-> **Time**: O(n) | **Space**: O(1)
-
-**Problem 387: First Unique Character in a String** -- Find the index of the first non-repeating character.
-> **Approach**: Two-pass -- first pass counts frequencies, second pass scans for the first char with count 1.
-> **Time**: O(n) | **Space**: O(1)
-
-**Problem 383: Ransom Note** -- Check if `ransomNote` can be constructed from `magazine` (each letter used once).
-> **Approach**: Count available letters in `magazine`, then consume them for each char in `ransomNote`; if any counter goes negative, return false.
-> **Time**: O(n + m) | **Space**: O(1)
-
-</details>
-
-<details>
-<summary><b>Week 2 -- Day 2 Solution Summaries</b></summary>
-
-<br/>
-
-**Problem 3: Longest Substring Without Repeating Characters** -- Find the length of the longest substring without repeating characters.
-> **Approach**: Sliding window with a `last[128]` array tracking the last seen index of each character; on a repeat, jump `left` past the previous occurrence.
-> **Time**: O(n) | **Space**: O(1)
-
-**Problem 567: Permutation in String** -- Check if any permutation of `s1` is a substring of `s2`.
-> **Approach**: Sliding window of size `s1.size()` over `s2`; maintain a frequency diff -- if any count goes negative, shrink from the left; when window size matches, return true.
-> **Time**: O(n) | **Space**: O(1)
-
-**Problem 438: Find All Anagrams in a String** -- Find all start indices of anagrams of `p` in `s`.
-> **Approach**: Sliding window of size `p.size()`; build frequency arrays for `p` and the current window, compare with `memcmp`; add start index to result when they match.
-> **Time**: O(n) | **Space**: O(1)
-
-</details>
-
 <details>
 <summary><b>Week 2 -- Day 3 Solution Summaries</b></summary>
 
@@ -518,24 +464,40 @@ Legend: Easy | Medium | Hard | Done | Pending
 
 </details>
 
+#### Day 4: Recursion + Strings
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **557** | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/description/) | Easy | String Manipulation | [C++](./Week_2/Day_4/1.cpp) | [Link](https://leetcode.com/problems/reverse-words-in-a-string-iii/) |
+| **394** | [Decode String](https://leetcode.com/problems/decode-string/description/) | Medium | Stack | [C++](./Week_2/Day_4/2.cpp) | [Link](https://leetcode.com/problems/decode-string/) |
+| **22** | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Backtracking | [C++](./Week_2/Day_4/3.cpp) | [Link](https://leetcode.com/problems/generate-parentheses/) |
+
 <details>
 <summary><b>Week 2 -- Day 4 Solution Summaries</b></summary>
 
 <br/>
 
-**Problem 557: Reverse Words in a String III** -- Reverse each word in a string while keeping spaces and word order.
-> **Approach**: Two-pointer scan -- find word boundaries, then reverse each word in-place using `std::reverse`.
-> **Time**: O(n) | **Space**: O(1)
+**Problem 557: Reverse Words in a String III** -- Reverse each word in a string while maintaining order.
+> **Approach**: Split by space, reverse each word individually, rejoin.
+> **Time**: O(n) | **Space**: O(n)
 
-**Problem 394: Decode String** -- Decode a string like `"3[a2[c]]"` into `"accaccacc"`.
-> **Approach**: Two stacks -- one for repeat counts, one for previously built strings; save state on `[`, expand on `]`.
+**Problem 394: Decode String** -- Decode a string encoded with `k[encoded_string]` notation.
+> **Approach**: Use two stacks (counts and strings); when encountering `]`, pop and repeat the inner string `k` times.
 > **Time**: O(n) | **Space**: O(n)
 
 **Problem 22: Generate Parentheses** -- Generate all valid combinations of `n` pairs of parentheses.
-> **Approach**: Backtracking -- add `(` while available, add `)` only when it keeps the sequence valid (closeCount < openCount).
-> **Time**: O(C(n) * n) | **Space**: O(n)
+> **Approach**: Backtracking -- add `(` if count < n, add `)` if close < open; base case when string length is `2n`.
+> **Time**: O(4^n / sqrt(n)) (Catalan number) | **Space**: O(n)
 
 </details>
+
+#### Day 5: Mixed String Problems
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **49** | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Medium | Hash Map | [C++](./Week_2/Day_5/1.cpp) | [Link](https://leetcode.com/problems/group-anagrams/) |
+| **443** | [String Compression](https://leetcode.com/problems/string-compression/description/) | Easy | String Manipulation | [C++](./Week_2/Day_5/2.cpp) | [Link](https://leetcode.com/problems/string-compression/) |
+| **5** | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | DP | [C++](./Week_2/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-palindromic-substring/) |
 
 <details>
 <summary><b>Week 2 -- Day 5 Solution Summaries</b></summary>
@@ -543,18 +505,16 @@ Legend: Easy | Medium | Hard | Done | Pending
 <br/>
 
 **Problem 49: Group Anagrams** -- Group strings that are anagrams of each other.
-> **Approach**: Sort each string to form a hash map key; all strings with the same sorted key belong to the same group.
+> **Approach**: Use a sorted string as the hash key; all anagrams map to the same key.
 > **Time**: O(n * k log k) | **Space**: O(n * k)
 
-**Problem 443: String Compression** -- Compress a character array in-place (e.g., `["a","a","b","b","c","c","c"]` becomes `["a","2","b","2","c","3"]`).
-> **Approach**: Two pointers -- count consecutive runs of each character, write the character and its count (if > 1) back into the array.
+**Problem 443: String Compression** -- Compress characters in-place using run-length encoding.
+> **Approach**: Two pointers -- read and write; count consecutive duplicates, write count if > 1.
 > **Time**: O(n) | **Space**: O(1)
 
 **Problem 5: Longest Palindromic Substring** -- Find the longest palindromic substring.
-> **Approach**: Expand around center -- for each index, expand outward for both odd and even length palindromes, tracking the longest found.
+> **Approach**: Expand around center -- for each index, expand outward while characters match; handle both odd and even lengths.
 > **Time**: O(n^2) | **Space**: O(1)
-
-Week 2 DSA complete. All 15 problems done.
 
 </details>
 
@@ -569,38 +529,6 @@ Week 2 DSA complete. All 15 problems done.
 | **141** | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/1.cpp) | [Link](https://leetcode.com/problems/linked-list-cycle/) |
 | **206** | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Easy | Pointer Manipulation | [C++](./Week_3/Day_1/2.cpp) | [Link](https://leetcode.com/problems/reverse-linked-list/) |
 | **876** | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_1/3.cpp) | [Link](https://leetcode.com/problems/middle-of-the-linked-list/) |
-
-#### Day 2: Linked List Advanced
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **21** | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy | Linked List | [C++](./Week_3/Day_2/1.cpp) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) |
-| **19** | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Medium | Two Pointers | [C++](./Week_3/Day_2/2.cpp) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
-| **234** | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_2/3.cpp) | [Link](https://leetcode.com/problems/palindrome-linked-list/) |
-
-#### Day 3: Stack Basics
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **20** | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stack | [C++](./Week_3/Day_3/1.cpp) | [Link](https://leetcode.com/problems/valid-parentheses/) |
-| **155** | [Min Stack](https://leetcode.com/problems/min-stack/description/) | Medium | Stack Design | [C++](./Week_3/Day_3/2.cpp) | [Link](https://leetcode.com/problems/min-stack/) |
-| **496** | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) | Easy | Monotonic Stack | [C++](./Week_3/Day_3/3.cpp) | [Link](https://leetcode.com/problems/next-greater-element-i/) |
-
-#### Day 4: Stack Advanced (Monotonic)
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [C++](./Week_3/Day_4/1.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
-| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [C++](./Week_3/Day_4/2.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
-| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [C++](./Week_3/Day_4/3.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
-
-#### Day 5: Queue / Deque
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [C++](./Week_3/Day_5/1.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
-| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [C++](./Week_3/Day_5/2.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
-| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [C++](./Week_3/Day_5/3.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
 
 <details>
 <summary><b>Week 3 -- Day 1 Solution Summaries</b></summary>
@@ -621,24 +549,40 @@ Week 2 DSA complete. All 15 problems done.
 
 </details>
 
+#### Day 2: Linked List Advanced
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **21** | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | Easy | Linked List | [C++](./Week_3/Day_2/1.cpp) | [Link](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| **19** | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Medium | Two Pointers | [C++](./Week_3/Day_2/2.cpp) | [Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) |
+| **234** | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | Easy | Fast & Slow Pointers | [C++](./Week_3/Day_2/3.cpp) | [Link](https://leetcode.com/problems/palindrome-linked-list/) |
+
 <details>
 <summary><b>Week 3 -- Day 2 Solution Summaries</b></summary>
 
 <br/>
 
 **Problem 21: Merge Two Sorted Lists** -- Merge two sorted linked lists into one sorted list.
-> **Approach**: Dummy node with tail pointer -- compare heads of both lists, append the smaller node, append the remaining list at the end.
+> **Approach**: Dummy head + two pointers -- compare nodes, attach smaller to result, advance that pointer.
 > **Time**: O(n + m) | **Space**: O(1)
 
-**Problem 19: Remove Nth Node From End of List** -- Remove the nth node from the end of a linked list in one pass.
-> **Approach**: Two pointers with dummy node -- advance fast pointer n steps ahead, then move both pointers together until fast reaches the end; remove slow's next node.
-> **Time**: O(n) | **Space**: O(1)
+**Problem 19: Remove Nth Node From End of List** -- Remove the nth node from the end in one pass.
+> **Approach**: Two pointers with n gap -- advance `fast` by n, then move both until `fast` reaches end; `slow` is just before the target.
+> **Time**: O(L) | **Space**: O(1)
 
 **Problem 234: Palindrome Linked List** -- Check if a linked list is a palindrome.
-> **Approach**: Find middle, reverse second half, compare both halves node by node.
+> **Approach**: Find middle with slow/fast, reverse second half, compare both halves node by node.
 > **Time**: O(n) | **Space**: O(1)
 
 </details>
+
+#### Day 3: Stack Basics
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **20** | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stack | [C++](./Week_3/Day_3/1.cpp) | [Link](https://leetcode.com/problems/valid-parentheses/) |
+| **155** | [Min Stack](https://leetcode.com/problems/min-stack/description/) | Medium | Stack Design | [C++](./Week_3/Day_3/2.cpp) | [Link](https://leetcode.com/problems/min-stack/) |
+| **496** | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) | Easy | Monotonic Stack | [C++](./Week_3/Day_3/3.cpp) | [Link](https://leetcode.com/problems/next-greater-element-i/) |
 
 <details>
 <summary><b>Week 3 -- Day 3 Solution Summaries</b></summary>
@@ -646,56 +590,70 @@ Week 2 DSA complete. All 15 problems done.
 <br/>
 
 **Problem 20: Valid Parentheses** -- Check if a string of brackets is valid.
-> **Approach**: Stack -- push opening brackets, pop and match on each closing bracket; return true if stack is empty at the end.
+> **Approach**: Stack -- push opening brackets, pop on closing; mismatch or non-empty stack at end means invalid.
 > **Time**: O(n) | **Space**: O(n)
 
-**Problem 155: Min Stack** -- Design a stack that supports push, pop, top, and retrieving the minimum element in O(1).
-> **Approach**: Two stacks -- one for values, one tracking the minimum at each level; push the running min alongside each value.
+**Problem 155: Min Stack** -- Stack that supports `getMin()` in O(1).
+> **Approach**: Auxiliary min-stack -- push current min alongside each element; `getMin()` reads from min-stack top.
 > **Time**: O(1) per operation | **Space**: O(n)
 
-**Problem 496: Next Greater Element I** -- Find the next greater element for each element in nums1, given nums2.
-> **Approach**: Monotonic decreasing stack -- traverse nums2, record the next greater element for each value in a hash map; look up answers for nums1.
-> **Time**: O(n + m) | **Space**: O(n)
+**Problem 496: Next Greater Element I** -- Find the next greater element for each element in nums1 (subset of nums2).
+> **Approach**: Monotonic decreasing stack over nums2; map each element to its next greater via a hashmap.
+> **Time**: O(n) | **Space**: O(n)
 
 </details>
+
+#### Day 4: Stack Advanced (Monotonic)
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **739** | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | Monotonic Stack | [C++](./Week_3/Day_4/1.cpp) | [Link](https://leetcode.com/problems/daily-temperatures/) |
+| **150** | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stack | [C++](./Week_3/Day_4/2.cpp) | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| **84** | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Monotonic Stack | [C++](./Week_3/Day_4/3.cpp) | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
 
 <details>
 <summary><b>Week 3 -- Day 4 Solution Summaries</b></summary>
 
 <br/>
 
-**Problem 739: Daily Temperatures** -- For each day, find how many days you have to wait until a warmer temperature.
-> **Approach**: Monotonic decreasing stack of indices -- traverse from right to left, pop shorter or equal temperatures, record the gap.
+**Problem 739: Daily Temperatures** -- For each day, find how many days until a warmer temperature.
+> **Approach**: Monotonic decreasing stack of indices -- pop when a warmer day is found; the difference in indices is the answer.
 > **Time**: O(n) | **Space**: O(n)
 
-**Problem 150: Evaluate Reverse Polish Notation** -- Evaluate an arithmetic expression in postfix notation.
-> **Approach**: Stack -- push operands; on each operator, pop two values, apply the operation, push the result back.
+**Problem 150: Evaluate Reverse Polish Notation** -- Evaluate an arithmetic expression in RPN.
+> **Approach**: Stack of integers -- push numbers, pop two on operator, compute result, push back.
 > **Time**: O(n) | **Space**: O(n)
 
-**Problem 84: Largest Rectangle in Histogram** -- Find the area of the largest rectangle in a histogram.
-> **Approach**: Monotonic increasing stack of indices -- when a shorter bar appears, compute areas using popped bars as the limiting height.
+**Problem 84: Largest Rectangle in Histogram** -- Find the largest rectangular area in a histogram.
+> **Approach**: Monotonic increasing stack of indices -- pop and compute area when a shorter bar is encountered; use full width after scanning.
 > **Time**: O(n) | **Space**: O(n)
 
 </details>
+
+#### Day 5: Queue / Deque
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **232** | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Easy | Queue Design | [C++](./Week_3/Day_5/1.cpp) | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
+| **933** | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/) | Easy | Queue / Deque | [C++](./Week_3/Day_5/2.cpp) | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
+| **239** | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) | Hard | Deque | [C++](./Week_3/Day_5/3.cpp) | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
 
 <details>
 <summary><b>Week 3 -- Day 5 Solution Summaries</b></summary>
 
 <br/>
 
-**Problem 232: Implement Queue using Stacks** -- Implement a FIFO queue using only two stacks.
-> **Approach**: Two stacks -- push into inputStack, pop/front from outputStack; transfer elements only when outputStack is empty.
-> **Time**: Amortized O(1) per operation | **Space**: O(n)
+**Problem 232: Implement Queue using Stacks** -- Implement a FIFO queue using two stacks.
+> **Approach**: Two stacks (in and out); push to `in`, transfer to `out` only when `out` is empty.
+> **Time**: O(1) amortized per operation | **Space**: O(n)
 
-**Problem 933: Number of Recent Calls** -- Count the number of recent calls within the last 3000 ms.
-> **Approach**: Queue -- maintain a sliding window of call timestamps; pop outdated calls, return the queue size.
-> **Time**: Amortized O(1) per ping | **Space**: O(n)
+**Problem 933: Number of Recent Calls** -- Count recent requests in the last 3000ms.
+> **Approach**: Queue -- enqueue each timestamp, dequeue timestamps older than `t - 3000`; queue size is the count.
+> **Time**: O(1) amortized | **Space**: O(n)
 
-**Problem 239: Sliding Window Maximum** -- Find the maximum value in each sliding window of size k.
-> **Approach**: Monotonic decreasing deque of indices -- keep the deque within the current window, maintain the maximum at the front.
+**Problem 239: Sliding Window Maximum** -- Find the max in each sliding window of size k.
+> **Approach**: Monotonic decreasing deque of indices -- remove out-of-window and smaller elements from back; front is always the current max.
 > **Time**: O(n) | **Space**: O(k)
-
-Week 3 DSA complete. All 15 problems done.
 
 </details>
 
@@ -738,14 +696,6 @@ Week 3 DSA complete. All 15 problems done.
 | **102** | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | BFS | [Done](./Week_4/Day_2/2.cpp) | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
 | **103** | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Medium | BFS | [Done](./Week_4/Day_2/3.cpp) | [Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |
 
-#### Day 3: Binary Search Tree
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **700** | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/1.cpp) | [Link](https://leetcode.com/problems/search-in-a-binary-search-tree/) |
-| **98** | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Medium | BST / DFS | [Done](./Week_4/Day_3/2.cpp) | [Link](https://leetcode.com/problems/validate-binary-search-tree/) |
-| **235** | [Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/3.cpp) | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
-
 <details>
 <summary><b>Week 4 -- Day 2 Solution Summaries</b></summary>
 
@@ -764,6 +714,14 @@ Week 3 DSA complete. All 15 problems done.
 > **Time**: O(n) | **Space**: O(n)
 
 </details>
+
+#### Day 3: Binary Search Tree
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **700** | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/1.cpp) | [Link](https://leetcode.com/problems/search-in-a-binary-search-tree/) |
+| **98** | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Medium | BST / DFS | [Done](./Week_4/Day_3/2.cpp) | [Link](https://leetcode.com/problems/validate-binary-search-tree/) |
+| **235** | [Lowest Common Ancestor of a BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Easy | BST | [Done](./Week_4/Day_3/3.cpp) | [Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
 
 <details>
 <summary><b>Week 4 -- Day 3 Solution Summaries</b></summary>

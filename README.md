@@ -4,7 +4,7 @@
 
 ### LeetCode Solutions & Object-Oriented Programming
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=60+DSA+Problems+%7C+4+OOPS+Problems;Week+1+%E2%9C%85+Week+2+In+Progress;C%2B%2B+%7C+Java+%7C+Daily+Practice" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=60+DSA+Problems+%7C+4+OOPS+Problems;Week+1+%E2%9C%85+Week+2+%E2%9C%85+Week+3+%E2%9C%85+Week+4+%E2%9C%85;C%2B%B+%7C+Java+%7C+All+Complete" alt="Typing SVG" />
 
 <br/>
 
@@ -65,7 +65,7 @@ Summer college assignment: **60 DSA problems + 4 OOPS problems** across 4 weeks.
 | **Week 1** | Arrays + Basic Strings | `15 / 15` | `1 / 1` | Complete |
 | **Week 2** | Strings (Advanced) | `15 / 15` | `1 / 1` | Complete |
 | **Week 3** | Linked List + Stack + Queue | `15 / 15` | `1 / 1` | Complete |
-| **Week 4** | Trees | `12 / 15` | `0 / 1` | Active |
+| **Week 4** | Trees | `15 / 15` | `1 / 1` | Complete |
 
 ### Visual Progress
 
@@ -79,21 +79,21 @@ Week 2  OOPS  ████████████████████  1 / 
 Week 3  DSA   ████████████████████  15 / 15  COMPLETE
 Week 3  OOPS  ████████████████████  1 / 1    COMPLETE
 
-Week 4  DSA   ███████████████████░  12 / 15
-Week 4  OOPS  ░░░░░░░░░░░░░░░░░░░░  0 / 1
+Week 4  DSA   ████████████████████  15 / 15  COMPLETE
+Week 4  OOPS  ████████████████████  1 / 1    COMPLETE
 ```
 
 ### Statistics
 
 | Metric | Count | Progress |
 |--------|:-----:|:--------:|
-| **Total DSA Solved** | `57 / 60` | 95% |
-| Easy | `39 / 36` | 100% |
-| Medium | `15 / 20` | 75% |
-| Hard | `3 / 4` | 75% |
-| **Total OOPS Solved** | `3 / 4` | 75% |
-| **Active Days** | `20` | Day 20 of summer |
-| **Overall** | `60 / 64` | 94% |
+| **Total DSA Solved** | `60 / 60` | 100% |
+| Easy | `40 / 36` | 100% |
+| Medium | `16 / 20` | 80% |
+| Hard | `4 / 4` | 100% |
+| **Total OOPS Solved** | `4 / 4` | 100% |
+| **Active Days** | `22` | Day 22 of summer |
+| **Overall** | `64 / 64` | 100% |
 
 ---
 
@@ -217,7 +217,23 @@ Summer_Assignment_2401921540171/
     │   ├── 2.cpp                   # Diameter of Binary Tree
     │   └── 3.cpp                   # Binary Tree Maximum Path Sum
     ├── Day_5/                      # Advanced Trees
+    │   ├── 1.cpp                   # Symmetric Tree
+    │   ├── 2.cpp                   # Construct BT from Preorder and Inorder
+    │   └── 3.cpp                   # Serialize and Deserialize BT
     └── OOPS/                       # Interface, Inner Class, Point, Box/Box3d
+        ├── src/interfaces/
+        │   ├── Test.java
+        │   ├── Arithmetic.java
+        │   └── ToTestInt.java
+        ├── src/innerclass/
+        │   ├── Outer.java
+        │   └── Main.java
+        ├── src/point/
+        │   └── Point.java
+        └── src/inheritance/
+            ├── Box.java
+            ├── Box3D.java
+            └── BoxDemo.java
 ```
 
 ---
@@ -763,9 +779,28 @@ Week 3 DSA complete. All 15 problems done.
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
 |:-:|---------|:----------:|-------|:--------:|:--------:|
-| **101** | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | Easy | DFS | [Pending](./Week_4/Day_5/101.cpp) | [Link](https://leetcode.com/problems/symmetric-tree/) |
-| **105** | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | DFS | [Pending](./Week_4/Day_5/105.cpp) | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |
-| **297** | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | Hard | DFS / BFS | [Pending](./Week_4/Day_5/297.cpp) | [Link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
+| **101** | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | Easy | DFS | [Done](./Week_4/Day_5/1.cpp) | [Link](https://leetcode.com/problems/symmetric-tree/) |
+| **105** | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | DFS | [Done](./Week_4/Day_5/2.cpp) | [Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |
+| **297** | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | Hard | DFS / BFS | [Done](./Week_4/Day_5/3.cpp) | [Link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
+
+<details>
+<summary><b>Week 4 -- Day 5 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 101: Symmetric Tree** -- Check if a binary tree is a mirror of itself.
+> **Approach**: DFS recursion -- compare left and right subtrees as mirror images.
+> **Time**: O(n) | **Space**: O(h)
+
+**Problem 105: Construct Binary Tree from Preorder and Inorder Traversal** -- Reconstruct tree from two traversal arrays.
+> **Approach**: Use preorder to identify root, inorder to split left/right subtrees; recursively build with hashmap for O(1) index lookup.
+> **Time**: O(n) | **Space**: O(n)
+
+**Problem 297: Serialize and Deserialize Binary Tree** -- Convert tree to string and back.
+> **Approach**: Serialize with preorder (use "#" for nulls); deserialize by reading tokens sequentially and reconstructing recursively.
+> **Time**: O(n) | **Space**: O(n)
+
+</details>
 
 ---
 
@@ -780,7 +815,7 @@ One OOPS topic per week, Java-based.
 | **Week 1** | Interfaces -- LibraryUser | Interface, Polymorphism, Encapsulation | [4 files](./Week_1/OOPS/) | Done |
 | **Week 2** | Interfaces -- Playable | Interface, Packages, Polymorphism | [4 files](./Week_2/OOPS/) | Done |
 | **Week 3** | Abstract Class -- Compartment | Abstract Class, Polymorphism, Random Behavior | [6 files](./Week_3/OOPS/) | Done |
-| **Week 4** | Mixed (4 sub-questions) | Interface, Inner Class, Class Design, Inheritance | [1-4 files](./Week_4/OOPS/) | Pending |
+| **Week 4** | Mixed (4 sub-questions) | Interface, Inner Class, Class Design, Inheritance | [10 files](./Week_4/OOPS/) | Done |
 
 ### OOPS Problem Briefs
 

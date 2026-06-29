@@ -4,7 +4,7 @@
 
 ### LeetCode Solutions & Object-Oriented Programming
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=60+DSA+Problems+%7C+4+OOPS+Problems;Week+1+%E2%9C%85+Week+2+%E2%9C%85+Week+3+%E2%9C%85+Week+4+%E2%9C%85;C%2B%B+%7C+Java+%7C+All+Complete" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=60+DSA+Problems+%7C+4+OOPS+Problems;Week+1+%E2%9C%85+Week+2+%E2%9C%85+Week+3+%E2%9C%85+Week+4+%E2%9C%85;C%2B%2B+%7C+Java+%7C+All+Complete" alt="Typing SVG" />
 
 <br/>
 

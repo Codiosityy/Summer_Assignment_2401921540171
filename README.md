@@ -252,38 +252,6 @@ Legend: Easy | Medium | Hard | Done | Pending
 | **26** | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Two Pointers | [C++](./Week_1/Day_1/2.cpp) | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
 | **121** | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Easy | Sliding Window | [C++](./Week_1/Day_1/3.cpp) | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
 
-#### Day 2: Prefix Sum / Sliding Window
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **53** | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | Medium | Kadane's Algorithm | [C++](./Week_1/Day_2/1.cpp) | [Link](https://leetcode.com/problems/maximum-subarray/) |
-| **217** | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | Hash Set | [C++](./Week_1/Day_2/2.cpp) | [Link](https://leetcode.com/problems/contains-duplicate/) |
-| **643** | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | Easy | Sliding Window | [C++](./Week_1/Day_2/3.cpp) | [Link](https://leetcode.com/problems/maximum-average-subarray-i/) |
-
-#### Day 3: Two Pointer
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **283** | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | Easy | Two Pointers | [C++](./Week_1/Day_3/1.cpp) | [Link](https://leetcode.com/problems/move-zeroes/) |
-| **977** | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Easy | Two Pointers | [C++](./Week_1/Day_3/2.cpp) | [Link](https://leetcode.com/problems/squares-of-a-sorted-array/) |
-| **11** | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium | Two Pointers | [C++](./Week_1/Day_3/3.cpp) | [Link](https://leetcode.com/problems/container-with-most-water/) |
-
-#### Day 4: Matrix Problems
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **1572** | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) | Easy | Matrix Traversal | [C++](./Week_1/Day_4/1.cpp) | [Link](https://leetcode.com/problems/matrix-diagonal-sum/) |
-| **566** | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/description/) | Easy | Matrix Manipulation | [C++](./Week_1/Day_4/2.cpp) | [Link](https://leetcode.com/problems/reshape-the-matrix/) |
-| **54** | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | Medium | Matrix Traversal | [C++](./Week_1/Day_4/3.cpp) | [Link](https://leetcode.com/problems/spiral-matrix/) |
-
-#### Day 5: String Basics
-
-| # | Problem | Difficulty | Topic | Solution | LeetCode |
-|:-:|---------|:----------:|-------|:--------:|:--------:|
-| **125** | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | Easy | Two Pointers | [C++](./Week_1/Day_5/1.cpp) | [Link](https://leetcode.com/problems/valid-palindrome/) |
-| **344** | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Two Pointers | [C++](./Week_1/Day_5/2.cpp) | [Link](https://leetcode.com/problems/reverse-string/) |
-| **14** | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | String Comparison | [C++](./Week_1/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-common-prefix/) |
-
 <details>
 <summary><b>Week 1 -- Day 1 Solution Summaries</b></summary>
 
@@ -302,6 +270,14 @@ Legend: Easy | Medium | Hard | Done | Pending
 > **Time**: O(n) | **Space**: O(1)
 
 </details>
+
+#### Day 2: Prefix Sum / Sliding Window
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **53** | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | Medium | Kadane's Algorithm | [C++](./Week_1/Day_2/1.cpp) | [Link](https://leetcode.com/problems/maximum-subarray/) |
+| **217** | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | Hash Set | [C++](./Week_1/Day_2/2.cpp) | [Link](https://leetcode.com/problems/contains-duplicate/) |
+| **643** | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) | Easy | Sliding Window | [C++](./Week_1/Day_2/3.cpp) | [Link](https://leetcode.com/problems/maximum-average-subarray-i/) |
 
 <details>
 <summary><b>Week 1 -- Day 2 Solution Summaries</b></summary>
@@ -322,6 +298,14 @@ Legend: Easy | Medium | Hard | Done | Pending
 
 </details>
 
+#### Day 3: Two Pointer
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **283** | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | Easy | Two Pointers | [C++](./Week_1/Day_3/1.cpp) | [Link](https://leetcode.com/problems/move-zeroes/) |
+| **977** | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Easy | Two Pointers | [C++](./Week_1/Day_3/2.cpp) | [Link](https://leetcode.com/problems/squares-of-a-sorted-array/) |
+| **11** | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium | Two Pointers | [C++](./Week_1/Day_3/3.cpp) | [Link](https://leetcode.com/problems/container-with-most-water/) |
+
 <details>
 <summary><b>Week 1 -- Day 3 Solution Summaries</b></summary>
 
@@ -341,43 +325,57 @@ Legend: Easy | Medium | Hard | Done | Pending
 
 </details>
 
+#### Day 4: Matrix Problems
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **1572** | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/) | Easy | Matrix Traversal | [C++](./Week_1/Day_4/1.cpp) | [Link](https://leetcode.com/problems/matrix-diagonal-sum/) |
+| **566** | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/description/) | Easy | Matrix Manipulation | [C++](./Week_1/Day_4/2.cpp) | [Link](https://leetcode.com/problems/reshape-the-matrix/) |
+| **54** | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) | Medium | Matrix Traversal | [C++](./Week_1/Day_4/3.cpp) | [Link](https://leetcode.com/problems/spiral-matrix/) |
+
 <details>
 <summary><b>Week 1 -- Day 4 Solution Summaries</b></summary>
 
 <br/>
 
-**Problem 1572: Matrix Diagonal Sum** -- Sum of the primary and secondary diagonals of a square matrix.
-> **Approach**: Single loop over rows; add `mat[i][i]` (primary) and `mat[i][n-1-i]` (secondary), skipping the center if odd-sized to avoid double-count.
+**Problem 1572: Matrix Diagonal Sum** -- Sum all elements on both diagonals, avoid double-counting the center.
+> **Approach**: Traverse diagonals with (i, i) and (i, n-1-i); if matrix size is odd, subtract the overlapping center.
 > **Time**: O(n) | **Space**: O(1)
 
-**Problem 566: Reshape the Matrix** -- Reshape an `m x n` matrix to a new `r x c` matrix, preserving data order.
-> **Approach**: Treat the matrix as a flat sequence of `m*n` elements; map index `i` to source `(i/n, i%n)` and destination `(i/c, i%c)`.
-> **Time**: O(m*n) | **Space**: O(1) extra (output excluded)
+**Problem 566: Reshape the Matrix** -- Reshape a matrix to new dimensions or return original if impossible.
+> **Approach**: Check if total elements match; if yes, map 2D indices to 1D and back.
+> **Time**: O(m*n) | **Space**: O(m*n)
 
-**Problem 54: Spiral Matrix** -- Return all elements of a matrix in spiral order (right, down, left, up).
-> **Approach**: Layer-by-layer traversal using four shrinking boundaries (`top`, `bottom`, `left`, `right`); peel off one layer per loop.
-> **Time**: O(m*n) | **Space**: O(1) extra (output excluded)
+**Problem 54: Spiral Matrix** -- Return all elements of a matrix in spiral order.
+> **Approach**: Four boundaries (top, bottom, left, right); traverse and shrink boundaries after each pass.
+> **Time**: O(m*n) | **Space**: O(1)
 
 </details>
+
+#### Day 5: String Basics
+
+| # | Problem | Difficulty | Topic | Solution | LeetCode |
+|:-:|---------|:----------:|-------|:--------:|:--------:|
+| **125** | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | Easy | Two Pointers | [C++](./Week_1/Day_5/1.cpp) | [Link](https://leetcode.com/problems/valid-palindrome/) |
+| **344** | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Two Pointers | [C++](./Week_1/Day_5/2.cpp) | [Link](https://leetcode.com/problems/reverse-string/) |
+| **14** | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | String Comparison | [C++](./Week_1/Day_5/3.cpp) | [Link](https://leetcode.com/problems/longest-common-prefix/) |
 
 <details>
 <summary><b>Week 1 -- Day 5 Solution Summaries</b></summary>
 
 <br/>
 
-**Problem 125: Valid Palindrome** -- Check if a string is a palindrome, ignoring non-alphanumerics and case.
-> **Approach**: Two pointers from both ends; skip non-alphanumerics, compare characters case-insensitively using `tolower` + `isalnum`.
+**Problem 125: Valid Palindrome** -- Check if a string is a palindrome (alphanumeric only, case-insensitive).
+> **Approach**: Two pointers from both ends; skip non-alphanumeric characters, compare lowercased chars.
 > **Time**: O(n) | **Space**: O(1)
 
-**Problem 344: Reverse String** -- Reverse a string in-place.
-> **Approach**: Two pointers from both ends, swap inward until they meet.
+**Problem 344: Reverse String** -- Reverse a character array in-place.
+> **Approach**: Two pointers at both ends; swap and move inward until they meet.
 > **Time**: O(n) | **Space**: O(1)
 
-**Problem 14: Longest Common Prefix** -- Find the longest prefix shared by all strings in the array.
-> **Approach**: Vertical scanning -- for each character position, check that all strings have the same char at that index; stop at first mismatch.
-> **Time**: O(n*m) | **Space**: O(1)
-
-Week 1 DSA complete. All 15 problems done.
+**Problem 14: Longest Common Prefix** -- Find the longest prefix shared by all strings.
+> **Approach**: Compare characters at each position across all strings; stop at first mismatch.
+> **Time**: O(S) where S = sum of all characters | **Space**: O(1)
 
 </details>
 
@@ -393,6 +391,25 @@ Week 1 DSA complete. All 15 problems done.
 | **387** | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/2.cpp) | [Link](https://leetcode.com/problems/first-unique-character-in-a-string/) |
 | **383** | [Ransom Note](https://leetcode.com/problems/ransom-note/description/) | Easy | Hash Map | [C++](./Week_2/Day_1/3.cpp) | [Link](https://leetcode.com/problems/ransom-note/) |
 
+<details>
+<summary><b>Week 2 -- Day 1 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 242: Valid Anagram** -- Check if two strings are anagrams of each other.
+> **Approach**: Use a fixed-size array of 26 counters; increment for `s`, decrement for `t`; if all counters are zero, they're anagrams.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 387: First Unique Character in a String** -- Find the index of the first non-repeating character.
+> **Approach**: Two-pass -- first pass counts frequencies, second pass scans for the first char with count 1.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 383: Ransom Note** -- Check if `ransomNote` can be constructed from `magazine` (each letter used once).
+> **Approach**: Count available letters in `magazine`, then consume them for each char in `ransomNote`; if any counter goes negative, return false.
+> **Time**: O(n + m) | **Space**: O(1)
+
+</details>
+
 #### Day 2: Sliding Window on Strings
 
 | # | Problem | Difficulty | Topic | Solution | LeetCode |
@@ -400,6 +417,25 @@ Week 1 DSA complete. All 15 problems done.
 | **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/1.cpp) | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | **567** | [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/2.cpp) | [Link](https://leetcode.com/problems/permutation-in-string/) |
 | **438** | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | Medium | Sliding Window | [C++](./Week_2/Day_2/3.cpp) | [Link](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
+
+<details>
+<summary><b>Week 2 -- Day 2 Solution Summaries</b></summary>
+
+<br/>
+
+**Problem 3: Longest Substring Without Repeating Characters** -- Find the length of the longest substring without repeating characters.
+> **Approach**: Sliding window with a `last[128]` array tracking the last seen index of each character; on a repeat, jump `left` past the previous occurrence.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 567: Permutation in String** -- Check if any permutation of `s1` is a substring of `s2`.
+> **Approach**: Sliding window of size `s1.size()` over `s2`; maintain a frequency diff -- if any count goes negative, shrink from the left; when window size matches, return true.
+> **Time**: O(n) | **Space**: O(1)
+
+**Problem 438: Find All Anagrams in a String** -- Find all start indices of anagrams of `p` in `s`.
+> **Approach**: Sliding window of size `p.size()`; build frequency arrays for `p` and the current window, compare with `memcmp`; add start index to result when they match.
+> **Time**: O(n) | **Space**: O(1)
+
+</details>
 
 #### Day 3: Pattern Matching
 
@@ -979,8 +1015,4 @@ public:
 
 This repository is for educational purposes. Use these solutions to learn, then write your own code.
 
----
 
-## License
-
-This project is open source and available for educational fair use.
